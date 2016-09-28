@@ -39,9 +39,18 @@ a#menu-toggle{
 
 .nav-open{
   overflow: hidden;
-  padding-right: $scrollbarwidth;
   a#menu-toggle{
-    right: $scrollbarwidth;
+    span{
+      height:0;
+    }
+    span:before{
+      transform: rotate(45deg);
+      top: -2px
+    }
+    span:after{
+      transform: rotate(-45deg);
+      bottom: -2px;
+    }
   }
   #nav-overlay{
     transform: scale(1);
@@ -98,15 +107,38 @@ nav{
          transition-delay: 0.1s * $i; 
         }
       }
-
+  
       a{
         color: $grey1;
         @include font-size(5);
         font-family: $font-hero;
+        position: relative;
+        &:after{
+          background: $grey1;
+          border-radius: 2px;
+          display: block;
+          content: '';
+          height: 6px;
+          width:0;
+          position: absolute;
+          top:50%;
+          left: 0;
+          margin-top: -3px;
+          transition: width 0.2s cubic-bezier(.86,0,.07,1);
+          transform: rotate(-5deg);
+          transform-origin: 0 50%;
+        }
+        &:hover{
+          &:after{
+            width:100%;
+          }
+        }
       }
       &.current-menu-item{
         a{
-
+          &:after{
+            width:100%;
+          }
         }
       }
       a{
