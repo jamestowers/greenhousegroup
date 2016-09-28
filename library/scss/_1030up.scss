@@ -1,0 +1,31 @@
+.pad{
+  padding: $padding*2;
+}
+/*********************
+TYPE
+*********************/
+h1, .h1 {
+  @include font-size(4.8);
+}
+h3, .h3 {
+  @include font-size(1.8);
+}
+
+/*********************
+HERO
+*********************/
+
+
+.hero-container {
+  min-height: 800px;
+}
+
+.hero-border{
+  padding: 10px;
+}
+
+.inner{
+  width:800px;
+  max-width:100%;
+  margin: 0 auto;
+}

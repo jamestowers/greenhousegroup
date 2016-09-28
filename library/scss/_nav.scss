@@ -1,0 +1,162 @@
+/* MOBILE ONLY KEEP IT SMALL!! */
+
+
+a#menu-toggle{
+  background: $color-primary;
+  display: block;
+  height: auto;
+  padding: 30px 20px;
+  position: fixed;
+  transition: transform 0.4s ease-in 2s;
+  right: 0;
+  top: 0;
+  z-index: 999;
+  span,
+  span:before,
+  span:after{
+    background:$grey1;
+    height:4px;
+    width:20px;
+    display:block;
+  }
+  span{
+    position: relative;
+    &:before,
+    &:after{
+      position: absolute;
+      left: 0;
+      content: '';
+    }
+    &:before{
+      top:-7px
+    }
+    &:after{
+      bottom: -7px;
+    }
+  }
+}
+
+
+.nav-open{
+  overflow: hidden;
+  padding-right: $scrollbarwidth;
+  a#menu-toggle{
+    right: $scrollbarwidth;
+  }
+  #nav-overlay{
+    transform: scale(1);
+  }
+  #nav-header{
+    display: flex;
+    z-index: 998;
+  }
+}
+.show-nav{
+  #nav-header{
+    li{
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+}
+
+
+#nav-overlay{
+  background:$color-primary-trans;
+  border-radius: 100%;
+  padding: 100px;
+  position: fixed;
+  top:0;
+  left:0;
+  transform: scale(0);
+  transition: transform 0.6s ease-out;
+  transform-origin: 50% 50%;
+  height:20px;
+  width:20px;
+  z-index:997;
+}
+
+nav{
+  clear: both;
+  text-align: center;
+  &#nav-header{
+    display: none;
+    flex-direction: column;
+    text-transform: uppercase;
+    position: fixed;
+    left:0;
+    top:0;
+    height:100%;
+    width:100%;
+    z-index: -1;
+    li{
+      transition: all 0.6s cubic-bezier(.22,.61,.36,1);
+      transform: translateY(40px);
+      opacity:0;
+      @for $i from 1 through 8 {
+        &:nth-child(#{$i}) { 
+         transition-delay: 0.1s * $i; 
+        }
+      }
+
+      a{
+        color: $grey1;
+        @include font-size(5);
+        font-family: $font-hero;
+      }
+      &.current-menu-item{
+        a{
+
+        }
+      }
+      a{
+        &:hover{
+
+        }
+      }
+      &.menu-item-has-children{
+        /* It's probabaly best to just hide sub nav and link straihght to the top level page. Y
+        You can show the child pages there on mobiles. */
+        ul.sub-menu{
+          display:none;
+        }
+      }
+    } 
+  }
+  &#nav-footer{
+    display: none;
+  }
+  &.pagination{
+    ul.page-numbers{
+      padding-left:0 !important;
+      li{
+        display:inline-block;
+        .page-numbers{
+          background:$color-primary;
+          color:$white;
+          padding: 7px 15px;
+          display:block;
+          a{
+            color:$white;
+          }
+          &.current{
+            background:$color-secondary;
+          }
+        }
+      }
+    }
+  }
+  ul{
+    margin: 0;
+    padding: 0;
+  }
+  li {
+    display:block;
+    a {
+      display: block;
+      color:$white;
+      text-decoration: none;
+      padding: $padding;
+    }
+  }
+}

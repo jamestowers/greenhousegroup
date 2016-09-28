@@ -1,0 +1,148 @@
+
+@font-face {
+  font-family: 'dropshop';
+  src:url('../fonts/dropshop.eot');
+  src:url('../fonts/dropshop.eot?#iefix-yv5vq3') format('embedded-opentype'),
+    url('../fonts/dropshop.woff') format('woff'),
+    url('../fonts/dropshop.ttf') format('truetype'),
+    url('../fonts/dropshop.svg#dropshop') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'DoubleQuick';
+  src: url('../fonts/double-quick.eot'); /* IE9 Compat Modes */
+  src: url('../fonts/double-quick.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('../fonts/double-quick.woff') format('woff'), /* Modern Browsers */
+       url('../fonts/double-quick.ttf')  format('truetype'), /* Safari, Android, iOS */
+       url('../fonts/double-quick.svg#28784e4ce7f780cd5be3825eef7d824b') format('svg'); /* Legacy iOS */
+       
+  font-style:   normal;
+  font-weight:  normal;
+}
+
+@font-face {
+  font-family: 'Manticore';
+  src: url('../fonts/Manticore.eot'); /* IE9 Compat Modes */
+  src: url('../fonts/Manticore.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('../fonts/Manticore.woff') format('woff'), /* Modern Browsers */
+       url('../fonts/Manticore.ttf')  format('truetype'), /* Safari, Android, iOS */
+       url('../fonts/Manticore.svg#cd822b280ef036cbf00f4b102b35a38a') format('svg'); /* Legacy iOS */
+       
+  font-style:   normal;
+  font-weight:  normal;
+}
+
+html{
+  font-size:  62%;
+}
+body {
+  font-family: $font-body;
+  @include font-size(1.4);
+  line-height: 1.5;
+  color:$grey2;
+  text-rendering: optimizeLegibility;
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  hyphens: none;
+}
+
+
+p{
+  hyphens: none;
+}
+
+small,
+.small{
+  @include font-size(1.2);
+}
+
+/*********************
+LINK STYLES
+*********************/
+
+a{
+  color: $color-link;
+  text-decoration: none;
+  transition: all 0.2s ease-out;
+  /* on hover */
+  &:hover{
+    color: $color-link-hover;
+  }
+
+  /* on click */
+  &:active {
+
+  }
+
+  /* mobile tap color */
+  &:link {
+    /*
+    this highlights links on iPhones/iPads.
+    so it basically works like the :hover selector
+    for mobile devices.
+    */
+    -webkit-tap-highlight-color : rgba( 0, 0, 0, 0.3 );
+  }
+}
+
+/******************************************************************
+H1, H2, H3, H4, H5 STYLES
+******************************************************************/
+
+.hero-text{
+  font-family: $font-hero;
+  @include font-size(4);
+  text-shadow: 1px 1px 3px rgba(0,0,0,0.4);
+}
+
+h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5 {
+  font-family: $font-header;
+  font-weight: $font-weight-normal;
+  text-transform: uppercase;
+  a{
+    color:$grey2;
+    &:hover{
+      color:$grey3;
+    }
+  }
+  /*
+  if you're going to use webfonts, be sure to check your weights
+  http://css-tricks.com/watch-your-font-weight/
+  */
+}
+
+h1, .h1 {
+  @include font-size(2.8);
+  margin: 0 0 $padding;
+}
+
+h2, .h2 {
+  @include font-size(3.2);
+  margin: 0 0 1rem;
+}
+
+h3, .h3 {
+  @include font-size(1.2);
+  font-family: $font-body;
+  letter-spacing: 2px;
+  font-weight: $font-weight-bold;
+  margin: 0 0 15px;
+}
+
+h4, .h4 {
+  @include font-size(1.1);
+  font-weight: 700;
+}
+
+h5, .h5 {
+  text-transform: uppercase;
+  letter-spacing: 2px;
+} 
+
+blockquote{
+  font-style: italic;
+  @include font-size(2);
+}

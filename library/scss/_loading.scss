@@ -1,0 +1,55 @@
+.loading{
+  overflow: hidden;
+  a#menu-toggle{
+    transform: translateY(-100%);
+  }
+  
+  .hero-container{
+    picture{
+      img{
+        opacity:0;
+        transform: scale(1.2);
+      }
+    }
+  }
+
+  .hero-border{
+    &.hero-border-top{
+      transform: translateY(-100%);
+    }
+    &.hero-border-right{
+      transform: translateX(100%);
+    }
+    &.hero-border-bottom{
+      transform: translateY(100%);
+    }
+    &.hero-border-left{
+      transform: translateX(-100%);
+    }
+  }
+
+  .hero-overlay{
+    .logo{
+      opacity:0;
+      transform: translateY(100%);
+      transition-delay: 0s;
+    }
+    .hero-text{
+      opacity:0;
+      transform: translateY(60px);
+    }
+  }
+
+
+  .bubble{
+    transform: translateY(150%);
+    svg{
+      animation: rotate 2s infinite cubic-bezier(.79,.14,.15,.86) forwards;
+      transform-origin: 44px 44px;
+      transform: rotate(-146deg) scale(1.2) translateY(100%);
+      path{
+        fill: $grey2;
+      }
+    }
+  }
+}
