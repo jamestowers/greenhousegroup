@@ -4,6 +4,18 @@
 		"selected_items":
 		[
 			[
+				"odd",
+				"odd_even"
+			],
+			[
+				"fi",
+				"figure\tTag"
+			],
+			[
+				"trans",
+				"transparent"
+			],
+			[
 				"reward",
 				"reward_request"
 			],
@@ -502,38 +514,25 @@
 			[
 				"echon",
 				"echonest_data"
-			],
-			[
-				"form",
-				"formatted_date"
-			],
-			[
-				"tracks",
-				"tracks_array"
-			],
-			[
-				"echo",
-				"echonest_data"
 			]
 		]
 	},
 	"buffers":
 	[
 		{
-			"file": "page_home.php",
+			"file": "index.php",
 			"settings":
 			{
-				"buffer_size": 1017,
+				"buffer_size": 1930,
 				"encoding": "UTF-8",
 				"line_ending": "Unix"
 			}
 		},
 		{
-			"file": "library/scss/_layout.scss",
+			"file": "functions-hero.php",
 			"settings":
 			{
-				"buffer_size": 1438,
-				"encoding": "UTF-8",
+				"buffer_size": 6469,
 				"line_ending": "Unix"
 			}
 		},
@@ -541,35 +540,25 @@
 			"file": "library/scss/_hero.scss",
 			"settings":
 			{
-				"buffer_size": 2671,
+				"buffer_size": 2936,
 				"encoding": "UTF-8",
 				"line_ending": "Unix"
 			}
 		},
 		{
-			"file": "library/coffee/dropshop.coffee",
+			"file": "library/scss/_768up.scss",
 			"settings":
 			{
-				"buffer_size": 4393,
+				"buffer_size": 1117,
 				"encoding": "UTF-8",
 				"line_ending": "Unix"
 			}
 		},
 		{
-			"file": "library/scss/_type.scss",
+			"file": "page_home.php",
 			"settings":
 			{
-				"buffer_size": 3230,
-				"encoding": "UTF-8",
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "header.php",
-			"settings":
-			{
-				"buffer_size": 1683,
-				"encoding": "UTF-8",
+				"buffer_size": 1152,
 				"line_ending": "Unix"
 			}
 		}
@@ -651,49 +640,58 @@
 	},
 	"expanded_folders":
 	[
-		"/Users/james/projects/greenhousegroup/wp-content/themes/greenhousegroup",
 		"/Users/james/projects/greenhousegroup/wp-content/themes/greenhousegroup/library",
 		"/Users/james/projects/greenhousegroup/wp-content/themes/greenhousegroup/library/coffee",
 		"/Users/james/projects/greenhousegroup/wp-content/themes/greenhousegroup/library/js",
 		"/Users/james/projects/greenhousegroup/wp-content/themes/greenhousegroup/library/js/vendor",
 		"/Users/james/projects/greenhousegroup/wp-content/themes/greenhousegroup/partials",
+		"/Users/james/projects/greenhousegroup/wp-content/plugins/wp-clients",
 		"/Users/james/projects/greenhousegroup/wp-content/plugins/wp-clients/admin",
-		"/Users/james/projects/greenhousegroup/wp-content/plugins/wp-clients/includes"
+		"/Users/james/projects/greenhousegroup/wp-content/plugins/wp-clients/includes",
+		"/Users/james/projects/greenhousegroup/wp-content/plugins/wp-clients/public"
 	],
 	"file_history":
 	[
-		"/Users/james/projects/greenhousegroup/wp-content/themes/greenhousegroup/library/images/bubble.svg",
-		"/Users/james/projects/greenhousegroup/wp-content/themes/greenhousegroup/library/scss/_utils.scss",
-		"/Users/james/projects/greenhousegroup/wp-content/themes/greenhousegroup/library/scss/_layout.scss",
-		"/Users/james/projects/greenhousegroup/wp-content/themes/greenhousegroup/library/scss/_variables.scss",
-		"/Users/james/projects/greenhousegroup/wp-content/themes/greenhousegroup/page_home.php",
+		"/Users/james/projects/greenhousegroup/wp-content/themes/greenhousegroup/single.php",
 		"/Users/james/projects/greenhousegroup/wp-content/themes/greenhousegroup/functions-hero.php",
+		"/Users/james/projects/greenhousegroup/wp-content/themes/greenhousegroup/library/scss/_hero.scss",
+		"/Users/james/projects/greenhousegroup/wp-content/themes/greenhousegroup/library/scss/_type.scss",
+		"/Users/james/projects/greenhousegroup/wp-content/themes/greenhousegroup/library/scss/_1640up.scss",
+		"/Users/james/projects/greenhousegroup/wp-content/themes/greenhousegroup/library/scss/_1240up.scss",
+		"/Users/james/projects/greenhousegroup/wp-content/themes/greenhousegroup/library/coffee/dropshop.coffee",
+		"/Users/james/projects/greenhousegroup/wp-content/themes/greenhousegroup/library/scss/_768up.scss",
+		"/Users/james/projects/greenhousegroup/wp-content/themes/greenhousegroup/library/scss/_1030up.scss",
+		"/Users/james/projects/greenhousegroup/wp-content/themes/greenhousegroup/library/scss/_variables.scss",
+		"/Users/james/projects/greenhousegroup/wp-content/themes/greenhousegroup/library/scss/_utils.scss",
+		"/Users/james/projects/greenhousegroup/wp-content/themes/greenhousegroup/library/scss/_tiles.scss",
+		"/Users/james/projects/greenhousegroup/wp-content/themes/greenhousegroup/header.php",
+		"/Users/james/projects/greenhousegroup/wp-content/themes/greenhousegroup/library/coffee/scripts.coffee",
+		"/Users/james/projects/greenhousegroup/wp-content/themes/greenhousegroup/functions.php",
+		"/Users/james/projects/greenhousegroup/wp-content/themes/greenhousegroup/library/scss/_nav.scss",
+		"/Users/james/projects/greenhousegroup/wp-content/themes/greenhousegroup/library/scss/_loading.scss",
+		"/Users/james/projects/greenhousegroup/wp-content/themes/greenhousegroup/library/scss/_layout.scss",
+		"/Users/james/projects/greenhousegroup/wp-content/plugins/wp-clients/public/class-wp-clients-public.php",
+		"/Users/james/projects/greenhousegroup/wp-content/themes/greenhousegroup/partials/loading.php",
+		"/Users/james/projects/greenhousegroup/wp-content/themes/greenhousegroup/library/scss/style.scss",
+		"/Users/james/projects/greenhousegroup/wp-content/plugins/wp-clients/includes/class-wp-clients.php",
+		"/Users/james/projects/greenhousegroup/wp-content/plugins/wp-clients/admin/class-wp-clients-admin.php",
+		"/Users/james/projects/greenhousegroup/wp-content/themes/greenhousegroup/page_home.php",
+		"/Users/james/projects/greenhousegroup/wp-content/themes/greenhousegroup/library/scss/_grid.scss",
+		"/Users/james/projects/greenhousegroup/wp-content/themes/greenhousegroup/library/images/bubble.svg",
+		"/Users/james/projects/rob-lake/wp-content/themes/rob-lake/library/scss/_layout.scss",
+		"/Users/james/projects/rob-lake/wp-content/themes/rob-lake/library/scss/_variables.scss",
 		"/Users/james/projects/greenhousegroup/wp-content/themes/greenhousegroup/library/gulpfile.js",
 		"/Users/james/projects/greenhousegroup/wp-content/themes/greenhousegroup/library/js/vendor/imagesloaded.pkgd.min.js",
 		"/Users/james/projects/greenhousegroup/wp-content/themes/greenhousegroup/library/package.json",
-		"/Users/james/projects/greenhousegroup/wp-content/themes/greenhousegroup/library/coffee/scripts.coffee",
-		"/Users/james/projects/greenhousegroup/wp-content/themes/greenhousegroup/header.php",
-		"/Users/james/projects/greenhousegroup/wp-content/themes/greenhousegroup/library/scss/_768up.scss",
-		"/Users/james/projects/greenhousegroup/wp-content/themes/greenhousegroup/library/scss/_1030up.scss",
-		"/Users/james/projects/greenhousegroup/wp-content/themes/greenhousegroup/library/scss/_1240up.scss",
-		"/Users/james/projects/greenhousegroup/wp-content/themes/greenhousegroup/library/scss/_1640up.scss",
-		"/Users/james/projects/greenhousegroup/wp-content/themes/greenhousegroup/library/scss/_hero.scss",
-		"/Users/james/projects/greenhousegroup/wp-content/themes/greenhousegroup/library/scss/_type.scss",
 		"/Users/james/projects/greenhousegroup/wp-content/themes/greenhousegroup/partials/image_bubble.php",
 		"/Users/james/projects/redbull/resources/assets/coffee/dropshop.coffee",
-		"/Users/james/projects/greenhousegroup/wp-content/themes/greenhousegroup/library/coffee/dropshop.coffee",
 		"/Users/james/projects/mia/wp-content/themes/mia/library/coffee/dropshop.coffee",
-		"/Users/james/projects/greenhousegroup/wp-content/themes/greenhousegroup/functions.php",
 		"/Users/james/projects/greenhousegroup/wp-content/themes/greenhousegroup/library/js/all.js",
 		"/Users/james/projects/greenhousegroup/wp-content/themes/greenhousegroup/library/js/vendor/jquery.2.1.4.js",
-		"/Users/james/projects/greenhousegroup/wp-content/themes/greenhousegroup/library/scss/_nav.scss",
 		"/Users/james/projects/greenhousegroup/wp-content/themes/greenhousegroup/footer.php",
 		"/Users/james/projects/greenhousegroup/wp-content/themes/greenhousegroup/library/js/scripts.js",
 		"/Users/james/projects/greenhousegroup/wp-content/themes/greenhousegroup/functions-theme-options.php",
 		"/Users/james/projects/greenhousegroup/wp-content/themes/greenhousegroup/functions-cleanup.php",
-		"/Users/james/projects/greenhousegroup/wp-content/plugins/wp-clients/includes/class-wp-clients.php",
-		"/Users/james/projects/greenhousegroup/wp-content/plugins/wp-clients/admin/class-wp-clients-admin.php",
-		"/Users/james/projects/greenhousegroup/wp-content/themes/greenhousegroup/library/scss/style.scss",
 		"/Users/james/projects/mia/wp-content/themes/mia/library/scss/style.scss",
 		"/Users/james/projects/greenhousegroup/wp-content/themes/page_home.php",
 		"/Users/james/projects/greenhousegroup/wp-content/themes/greenhousegroup/library/scss/_base.scss",
@@ -781,15 +779,7 @@
 		"/Users/james/projects/redbull/app/Console/Commands/UpdatesSendCommand.php",
 		"/Users/james/projects/redbull/app/Update.php",
 		"/Users/james/projects/redbull/resources/views/rewards/inviteesCreate.blade.php",
-		"/Users/james/projects/redbull/resources/assets/sass/_forms-768up.scss",
-		"/Users/james/projects/redbull/app/Http/Controllers/RegionController.php",
-		"/Users/james/projects/redbull/resources/views/rewards/regions/edit.blade.php",
-		"/Users/james/projects/redbull/app/Http/Controllers/CategoryController.php",
-		"/Users/james/projects/redbull/resources/views/rewards/regions/index.blade.php",
-		"/Users/james/projects/redbull/resources/views/rewards/categories/index.blade.php",
-		"/Users/james/projects/redbull/resources/views/rewards/categories/edit.blade.php",
-		"/Users/james/projects/redbull/app/Providers/RouteServiceProvider.php",
-		"/Users/james/projects/redbull/resources/views/codes/show.blade.php"
+		"/Users/james/projects/redbull/resources/assets/sass/_forms-768up.scss"
 	],
 	"find":
 	{
@@ -848,6 +838,24 @@
 		"case_sensitive": true,
 		"find_history":
 		[
+			"@sizes.windowWidth",
+			"nav-wrapper",
+			"dropshop.",
+			" translate3d(50%, -50%, 0)",
+			"5%",
+			"125%",
+			"50%",
+			"200%",
+			"(200%",
+			"175%",
+			"slide-from-right",
+			"post_",
+			"textdomain",
+			"Genre",
+			"\";\n",
+			"translateY",
+			"logo-outline",
+			", \n  polyline",
 			"$(this)",
 			"img",
 			"Moderni",
@@ -957,25 +965,7 @@
 			"instant-rewards",
 			"regions.",
 			"instant-rewards",
-			"region",
-			"updateRewardClaims",
-			"private",
-			"rivate",
-			"getInstantRewardAttribute",
-			"$code",
-			"foreach",
-			"endif",
-			"endforeach",
-			"if(",
-			"}}",
-			"{{",
-			"@",
-			"public",
-			"claimedRewards",
-			"$request->options",
-			"$reward",
-			"['status' => 'accepted', 'code_id' => $code_id, 'options' => $options]",
-			"$code_id"
+			"region"
 		],
 		"highlight": false,
 		"in_selection": false,
@@ -1121,24 +1111,149 @@
 	"groups":
 	[
 		{
-			"selected": 1,
+			"selected": 0,
 			"sheets":
 			[
 				{
 					"buffer": 0,
-					"file": "page_home.php",
+					"file": "index.php",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 1017,
+						"buffer_size": 1930,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								674,
-								674
+								101,
+								101
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/PHP/PHP.sublime-syntax",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 2,
+					"type": "text"
+				}
+			]
+		},
+		{
+			"selected": 2,
+			"sheets":
+			[
+				{
+					"buffer": 1,
+					"file": "functions-hero.php",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 6469,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								5,
+								5
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/PHP/PHP.sublime-syntax",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 3,
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "library/scss/_hero.scss",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 2936,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								187,
+								187
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/SCSS/SCSS.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 1,
+					"type": "text"
+				},
+				{
+					"buffer": 3,
+					"file": "library/scss/_768up.scss",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1117,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								222,
+								222
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/SCSS/SCSS.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 0,
+					"type": "text"
+				},
+				{
+					"buffer": 4,
+					"file": "page_home.php",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1152,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								167,
+								167
 							]
 						],
 						"settings":
@@ -1151,163 +1266,7 @@
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 2,
-					"type": "text"
-				},
-				{
-					"buffer": 1,
-					"file": "library/scss/_layout.scss",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 1438,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								619,
-								619
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/SCSS/SCSS.tmLanguage",
-							"tab_size": 2,
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 394.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 1,
-					"type": "text"
-				}
-			]
-		},
-		{
-			"selected": 1,
-			"sheets":
-			[
-				{
-					"buffer": 2,
-					"file": "library/scss/_hero.scss",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 2671,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								145,
-								145
-							]
-						],
-						"settings":
-						{
-							"history_list_is_closing": true,
-							"syntax": "Packages/SCSS/SCSS.tmLanguage",
-							"tab_size": 2,
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 3,
-					"type": "text"
-				},
-				{
-					"buffer": 3,
-					"file": "library/coffee/dropshop.coffee",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 4393,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								2919,
-								2919
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/Better CoffeeScript/CoffeeScript.tmLanguage",
-							"tab_size": 2,
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 1219.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 0,
-					"type": "text"
-				},
-				{
-					"buffer": 4,
-					"file": "library/scss/_type.scss",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 3230,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								2438,
-								2438
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/SCSS/SCSS.tmLanguage",
-							"tab_size": 2,
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 1773.0,
-						"zoom_level": 1.0
-					},
 					"stack_index": 4,
-					"type": "text"
-				},
-				{
-					"buffer": 5,
-					"file": "header.php",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 1683,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								1342,
-								1342
-							]
-						],
-						"settings":
-						{
-							"history_list_is_closing": true,
-							"syntax": "Packages/PHP/PHP.sublime-syntax"
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 5,
 					"type": "text"
 				}
 			]
@@ -1341,7 +1300,7 @@
 		"cols":
 		[
 			0.0,
-			0.476871744792,
+			0.505201312328,
 			1.0
 		],
 		"rows":
@@ -1373,48 +1332,44 @@
 		"selected_items":
 		[
 			[
-				"layout",
-				"greenhousegroup/library/scss/_layout.scss"
-			],
-			[
-				"bubb",
-				"greenhousegroup/library/images/bubble.svg"
-			],
-			[
-				"home",
-				"greenhousegroup/page_home.php"
-			],
-			[
-				"package",
-				"greenhousegroup/library/package.json"
-			],
-			[
-				"gulpf",
-				"greenhousegroup/library/gulpfile.js"
-			],
-			[
-				"script",
-				"greenhousegroup/library/coffee/scripts.coffee"
-			],
-			[
-				"dropshop",
-				"greenhousegroup/library/coffee/dropshop.coffee"
+				"76",
+				"greenhousegroup/library/scss/_768up.scss"
 			],
 			[
 				"hero",
-				"greenhousegroup/functions-hero.php"
+				"greenhousegroup/library/scss/_hero.scss"
 			],
 			[
-				"vari",
-				"greenhousegroup/library/scss/_variables.scss"
+				"single",
+				"greenhousegroup/single.php"
 			],
 			[
-				"head",
-				"greenhousegroup/header.php"
+				"page",
+				"greenhousegroup/page_home.php"
+			],
+			[
+				"index",
+				"greenhousegroup/index.php"
+			],
+			[
+				"type",
+				"greenhousegroup/library/scss/_type.scss"
 			],
 			[
 				"var",
 				"greenhousegroup/library/scss/_variables.scss"
+			],
+			[
+				"util",
+				"greenhousegroup/library/scss/_utils.scss"
+			],
+			[
+				"tile",
+				"greenhousegroup/library/scss/_tiles.scss"
+			],
+			[
+				"dropshop",
+				"greenhousegroup/library/coffee/dropshop.coffee"
 			],
 			[
 				"16",
@@ -1429,24 +1384,96 @@
 				"greenhousegroup/library/scss/_1030up.scss"
 			],
 			[
-				"utils.sc",
-				"greenhousegroup/library/scss/_utils.scss"
-			],
-			[
 				"768",
 				"greenhousegroup/library/scss/_768up.scss"
 			],
 			[
-				"varia",
+				"hero.s",
+				"greenhousegroup/library/scss/_hero.scss"
+			],
+			[
+				"load",
+				"greenhousegroup/library/scss/_loading.scss"
+			],
+			[
+				"vari",
 				"greenhousegroup/library/scss/_variables.scss"
 			],
 			[
-				"type",
-				"greenhousegroup/library/scss/_type.scss"
+				"functin",
+				"greenhousegroup/functions.php"
+			],
+			[
+				"script",
+				"greenhousegroup/library/coffee/scripts.coffee"
 			],
 			[
 				"header",
 				"greenhousegroup/header.php"
+			],
+			[
+				"nav",
+				"greenhousegroup/library/scss/_nav.scss"
+			],
+			[
+				"loading",
+				"greenhousegroup/library/scss/_loading.scss"
+			],
+			[
+				"layout",
+				"greenhousegroup/library/scss/_layout.scss"
+			],
+			[
+				"sty",
+				"greenhousegroup/library/scss/style.scss"
+			],
+			[
+				"style",
+				"greenhousegroup/library/scss/style.scss"
+			],
+			[
+				"grid",
+				"greenhousegroup/library/scss/_grid.scss"
+			],
+			[
+				"home",
+				"greenhousegroup/page_home.php"
+			],
+			[
+				"dropsh",
+				"greenhousegroup/library/coffee/dropshop.coffee"
+			],
+			[
+				"style.scs",
+				"greenhousegroup/library/scss/style.scss"
+			],
+			[
+				"bubble",
+				"greenhousegroup/library/images/bubble.svg"
+			],
+			[
+				"bubb",
+				"greenhousegroup/library/images/bubble.svg"
+			],
+			[
+				"package",
+				"greenhousegroup/library/package.json"
+			],
+			[
+				"gulpf",
+				"greenhousegroup/library/gulpfile.js"
+			],
+			[
+				"head",
+				"greenhousegroup/header.php"
+			],
+			[
+				"utils.sc",
+				"greenhousegroup/library/scss/_utils.scss"
+			],
+			[
+				"varia",
+				"greenhousegroup/library/scss/_variables.scss"
 			],
 			[
 				"variab",
@@ -1455,14 +1482,6 @@
 			[
 				"type.sc",
 				"greenhousegroup/library/scss/_type.scss"
-			],
-			[
-				"hero.s",
-				"greenhousegroup/library/scss/_hero.scss"
-			],
-			[
-				"bubble",
-				"greenhousegroup/library/images/bubble.svg"
 			],
 			[
 				"all",
@@ -1501,14 +1520,6 @@
 				"greenhousegroup/functions.php"
 			],
 			[
-				"dropsh",
-				"greenhousegroup/library/coffee/dropshop.coffee"
-			],
-			[
-				"nav",
-				"greenhousegroup/library/scss/_nav.scss"
-			],
-			[
 				"base.s",
 				"greenhousegroup/library/scss/_base.scss"
 			],
@@ -1519,10 +1530,6 @@
 			[
 				"layot",
 				"greenhousegroup/library/scss/_layout.scss"
-			],
-			[
-				"page",
-				"greenhousegroup/page.php"
 			],
 			[
 				"rewardcon",
@@ -1835,54 +1842,6 @@
 			[
 				"admin.co",
 				"resources/assets/coffee/admin.coffee"
-			],
-			[
-				"rewarddr",
-				"app/ViewComposers/RewardDropdownComposer.php"
-			],
-			[
-				"forms.co",
-				"resources/assets/coffee/forms.coffee"
-			],
-			[
-				"employeeed",
-				"resources/views/users/employees/createOrUpdate.blade.php"
-			],
-			[
-				"reportin",
-				"resources/views/reports/index.blade.php"
-			],
-			[
-				"employeeind",
-				"resources/views/users/employees/index.blade.php"
-			],
-			[
-				"updatein",
-				"resources/views/updates/updateInvitees.blade.php"
-			],
-			[
-				"rou",
-				"app/Http/routes.php"
-			],
-			[
-				"reportcon",
-				"app/Http/Controllers/ReportController.php"
-			],
-			[
-				"inviteescre",
-				"resources/views/rewards/inviteesCreate.blade.php"
-			],
-			[
-				"dropshop.co",
-				"resources/assets/coffee/dropshop.coffee"
-			],
-			[
-				"updateco",
-				"app/Http/Controllers/UpdateController.php"
-			],
-			[
-				"reward.",
-				"app/Reward.php"
 			]
 		],
 		"width": 0.0
@@ -1895,7 +1854,7 @@
 		[
 			[
 				"",
-				"~/projects/messenger-bot/messenger-bot.sublime-project"
+				"~/projects/universal/quizes/solid-silver-60s/ss60s.sublime-project"
 			],
 			[
 				"cult",
@@ -1936,7 +1895,7 @@
 	"show_minimap": false,
 	"show_open_files": true,
 	"show_tabs": true,
-	"side_bar_visible": true,
+	"side_bar_visible": false,
 	"side_bar_width": 251.0,
 	"status_bar_visible": true,
 	"template_settings":

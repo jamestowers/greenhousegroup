@@ -514,6 +514,9 @@ iframe {
 
 section {
   clear: both; }
+  section.dark {
+    background: #111;
+    color: #FFF; }
 
 .inner {
   width: 100%;
@@ -1045,10 +1048,19 @@ a#menu-toggle {
       bottom: -7px; }
 
 .nav-open {
-  overflow: hidden;
-  padding-right: 13px; }
-  .nav-open a#menu-toggle {
-    right: 13px; }
+  overflow: hidden; }
+  .nav-open a#menu-toggle span {
+    height: 0; }
+  .nav-open a#menu-toggle span:before {
+    -webkit-transform: rotate(45deg);
+        -ms-transform: rotate(45deg);
+            transform: rotate(45deg);
+    top: -2px; }
+  .nav-open a#menu-toggle span:after {
+    -webkit-transform: rotate(-45deg);
+        -ms-transform: rotate(-45deg);
+            transform: rotate(-45deg);
+    bottom: -2px; }
   .nav-open #nav-overlay {
     -webkit-transform: scale(1);
         -ms-transform: scale(1);
@@ -1126,7 +1138,30 @@ nav {
         color: #111;
         font-size: 50px;
         font-size: 5rem;
-        font-family: "Manticore", sans-serif; }
+        font-family: "Manticore", sans-serif;
+        position: relative; }
+        nav#nav-header li a:after {
+          background: #111;
+          border-radius: 2px;
+          display: block;
+          content: '';
+          height: 6px;
+          width: 0;
+          position: absolute;
+          top: 50%;
+          left: 0;
+          margin-top: -3px;
+          transition: width 0.2s cubic-bezier(0.86, 0, 0.07, 1);
+          -webkit-transform: rotate(-5deg);
+              -ms-transform: rotate(-5deg);
+                  transform: rotate(-5deg);
+          -webkit-transform-origin: 0 50%;
+              -ms-transform-origin: 0 50%;
+                  transform-origin: 0 50%; }
+        nav#nav-header li a:hover:after {
+          width: 100%; }
+      nav#nav-header li.current-menu-item a:after {
+        width: 100%; }
       nav#nav-header li.menu-item-has-children {
         /* It's probabaly best to just hide sub nav and link straihght to the top level page. Y
         You can show the child pages there on mobiles. */ }
@@ -1238,6 +1273,11 @@ H1, H2, H3, H4, H5 STYLES
   font-size: 40px;
   font-size: 4rem;
   text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.4); }
+
+.page-title {
+  font-size: 40px;
+  font-size: 4rem;
+  text-align: center; }
 
 h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5 {
   font-family: "DoubleQuick", sans-serif;
@@ -1845,11 +1885,17 @@ NO MARGIN
   .hide-on-mobile {
     display: inline;
     visibility: visible; }
+  .inner {
+    width: 800px; }
   /*********************
 HEADER STYLES
 *********************/
   header.header #logo {
     height: 100px; }
+  .nav-open {
+    padding-right: 13px; }
+    .nav-open a#menu-toggle {
+      right: 13px; }
   /*********************
 HERO
 *********************/
@@ -1915,8 +1961,8 @@ you can add resource intensive styles.
 TYPE
 *********************/
   h1, .h1 {
-    font-size: 48px;
-    font-size: 4.8rem; }
+    font-size: 36px;
+    font-size: 3.6rem; }
   h3, .h3 {
     font-size: 18px;
     font-size: 1.8rem; }
@@ -1928,7 +1974,7 @@ HERO
   .hero-border {
     padding: 10px; }
   .inner {
-    width: 800px;
+    width: 900px;
     max-width: 100%;
     margin: 0 auto; } }
 
@@ -1937,16 +1983,12 @@ LARGE VIEWING SIZE
 This is for the large monitors
 */
 @media only screen and (min-width: 1240px) {
-  /******************************************************************
-Site Name: 
-Author: 
-
-Stylesheet: Large Monitor Stylesheet
-
-You can add some advanced styles here if you like. This kicks in
-on larger screens.
-
-******************************************************************/
+  /*********************
+TYPE
+*********************/
+  h1, .h1 {
+    font-size: 48px;
+    font-size: 4.8rem; }
   /*********************
 HERO
 *********************/

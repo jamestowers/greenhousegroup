@@ -3,6 +3,10 @@
   visibility: visible;
 }
 
+.inner{
+  width:800px;
+}
+
 /*********************
 HEADER STYLES
 *********************/
@@ -10,6 +14,13 @@ HEADER STYLES
 header.header{
   #logo{
     height:100px;
+  }
+}
+
+.nav-open{
+  padding-right: $scrollbarwidth;
+  a#menu-toggle{
+    right: $scrollbarwidth;
   }
 }
 

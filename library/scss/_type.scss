@@ -98,6 +98,11 @@ H1, H2, H3, H4, H5 STYLES
   text-shadow: 1px 1px 3px rgba(0,0,0,0.4);
 }
 
+.page-title{
+  @include font-size(4);
+  text-align: center;
+}
+
 h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5 {
   font-family: $font-header;
   font-weight: $font-weight-normal;

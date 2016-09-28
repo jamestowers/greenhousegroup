@@ -1,25 +1,9 @@
-<article id="post-<?php the_ID(); ?>" <?php post_class( 'group' ); ?> role="article">
+<a href="<?php the_permalink() ?>" rel="bookmark" title="<?php the_title_attribute(); ?>" class="tile col6 group  <?php echo $odd ? '' : 'last' ;?>" role="article">
 
-  <a href="<?php the_permalink() ?>" rel="bookmark" title="<?php the_title_attribute(); ?>" class="thumbnail col3">
-    <?php the_post_thumbnail(  ); ?> 
-  </a>
+  <figure style="background-image: url('<?php echo get_the_post_thumbnail_url( $post->ID, 'hero-image-desktop' ); ?>');"></figure>
 
-  <div class="post-content col9 pull-right last">
-
-    <h2 class="page-title">
-      <a href="<?php the_permalink() ?>" rel="bookmark" title="<?php the_title_attribute(); ?>">
-        <?php the_title(); ?>
-      </a>
-    </h2>
-
-    <div class="entry-content group">
-      <?php the_excerpt(); ?>
-    </div>
-
-    <?php get_template_part('partials/news-footer');?>
-
+  <div class="copy">
+    <h2 class=""><?php echo get_the_title($post->ID);?></h2>
   </div>
 
-  <?php // comments_template(); // uncomment if you want to use them ?>
-
-</article>
+</a>

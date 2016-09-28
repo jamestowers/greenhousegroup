@@ -26,6 +26,9 @@
         </section>
 
         <section class="pad">
+            
+            <h1 class="page-title">Who we work with</h1>
+
             <?php echo do_shortcode('[ghg_clients]');?>
         </section>
 
@@ -37,6 +40,31 @@
     get_template_part( 'content', 'none' );
 
     endif; ?>
+
+    
+        <?php /*$args = array(
+            'post_type' => 'post'
+            );
+
+        $news_posts = new WP_Query($args);
+
+        if ( $news_posts->have_posts() ) { ?>
+            
+            <h1 class="page-title">News</h1>
+
+            <section id="news" class="dark">
+
+                <?php while ( $news_posts->have_posts() ) {
+                $news_posts->the_post();
+
+                $odd = true;
+                get_template_part('partials/news', 'post');
+                $odd ? $odd = false : true;
+
+            }?>
+
+            </section>
+        <?php } */?>
 
 
 <?php get_footer(); ?>

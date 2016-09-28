@@ -26,6 +26,10 @@ iframe{
 }
 section{
   clear: both;
+  &.dark{
+    background: $grey1;
+    color: $white;
+  }
 }
 .inner{
   width:100%;
