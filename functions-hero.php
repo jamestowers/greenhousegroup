@@ -144,7 +144,7 @@ function dropshop_hero_image( $headline_text = "" ){
     ?>
 
     <?php if( $headline_text ){
-      echo '<div class="hero-banner">' . $headline_text . '</div>';
+      echo '<div class="hero-banner hero-text">' . $headline_text . '</div>';
     }?>
 
     </div>

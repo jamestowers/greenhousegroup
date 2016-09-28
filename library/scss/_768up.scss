@@ -25,6 +25,12 @@ HERO
 .hero-container{
   min-height: 600px;
   width:100%;
+  & + .inner{
+    background: $white;
+    margin-top: -200px;
+    position: relative;
+    z-index: 3;
+  }
 }
 
 

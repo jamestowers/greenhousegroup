@@ -1,13 +1,17 @@
 <?php get_header(); ?>
+	
+	<?php dropshop_hero_image( get_the_title() );?>
 
-	<div class="inner">
+	<?php wp_reset_query();?>
+
+	<div class="inner pad">
 
 		<?php if (have_posts()) : while (have_posts()) : the_post(); ?>
 
 			<article id="post-<?php the_ID(); ?>" <?php post_class( 'pad group' ); ?> role="article">
 
 				<a href="<?php the_permalink() ?>" rel="bookmark" title="<?php the_title_attribute(); ?>" class="thumbnail col3">
-					<?php the_post_thumbnail( 'thumbnail' ); ?> 
+					<?php the_post_thumbnail( 'hero-image-tablet-portrait' ); ?> 
 				</a>
 
 				<div class="post-content col9 last">
@@ -23,9 +27,9 @@
 					</div>
 
 					<footer class="article-footer small">
-						<?php if ( function_exists('dropshop_share_buttons')) { 
+						<?php /* if ( function_exists('dropshop_share_buttons')) { 
 							dropshop_share_buttons(get_the_permalink()); 
-						}?>
+						} */?>
 						<?php the_tags( '<p class="tags pull-right"><span class="tags-title">' . __( 'Tags:', 'dropshoptheme' ) . '</span> ', ', ', '</p>' ); ?>
 					</footer>
 

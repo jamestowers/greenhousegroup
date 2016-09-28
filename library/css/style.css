@@ -873,7 +873,7 @@ HERO
   min-height: 440px; }
   .hero-overlay .logo,
   .hero-overlay .hero-text {
-    transition: all 1s ease-out;
+    transition: all 0.6s ease-out;
     opacity: 1;
     -webkit-transform: translateY(0);
         -ms-transform: translateY(0);
@@ -1859,6 +1859,11 @@ HERO
   .hero-container {
     min-height: 600px;
     width: 100%; }
+    .hero-container + .inner {
+      background: #FFF;
+      margin-top: -200px;
+      position: relative;
+      z-index: 3; }
   .video-wrapper {
     position: relative;
     padding-bottom: 56.25%;

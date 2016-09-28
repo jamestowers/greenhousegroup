@@ -1,6 +1,6 @@
 <?php get_header(); ?>
 
-	<?php dropshop_hero_image();?>
+	<?php dropshop_hero_image( get_the_title() );?>
 	
 	<div class="inner">
 
