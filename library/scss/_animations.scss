@@ -1,0 +1,12 @@
+[data-animate="true"]{
+  opacity:0;
+  transform: translateY(40px);
+  transition: all 2s cubic-bezier(0.86, 0, 0.07, 1);
+  &:nth-child(odd){
+    transition-delay: 0.2s;
+  }
+  &.animate{
+    opacity: 1;
+    transform: translateY(0);
+  }
+}

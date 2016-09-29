@@ -104,7 +104,13 @@ nav{
       opacity:0;
       @for $i from 1 through 8 {
         &:nth-child(#{$i}) { 
-         transition-delay: 0.1s * $i; 
+          $angle: random(10) - random(20); // range of -5 to 5
+          transition-delay: 0.1s * $i; 
+          a{
+            &:after{
+              transform: rotate(#{$angle}deg);
+            }
+          }
         }
       }
   
@@ -125,7 +131,6 @@ nav{
           left: 0;
           margin-top: -3px;
           transition: width 0.2s cubic-bezier(.86,0,.07,1);
-          transform: rotate(-5deg);
           transform-origin: 0 50%;
         }
         &:hover{

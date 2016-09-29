@@ -9,9 +9,11 @@
   padding-bottom: 120%;
   overflow: hidden;
   position: relative;
+  margin-bottom: $padding*2;
   &:hover{
     figure{
       transform: scale(1.1);
+      filter: grayscale(0%) contrast(100%);
       opacity:0.9
     }
   }
@@ -25,6 +27,7 @@
     width:100%;
     height:100%;
     z-index: 0;
+    filter: grayscale(100%) contrast(120%);
   }
   .copy{
     position: absolute;

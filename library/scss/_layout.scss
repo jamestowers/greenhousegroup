@@ -13,22 +13,7 @@ ELEMENTS
 *********************/
 
 .scrolled{
-  header.header{
-    position: fixed;
-    height:40px;
-    width:100%;
-    left:0;
-    padding: 4px;
-    z-index: 11;
-    animation: animate-from-top 0.2s 1 0;
-    .social-icons{
-      li{
-        a{
-          padding: 16px 5px;
-        }
-      }
-    }
-  }
+  
 }
 
 header.header,

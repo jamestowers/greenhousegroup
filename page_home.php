@@ -13,13 +13,11 @@
             </div>
         </div>
 
-        <section <?php post_class( ); ?> >
+        <section>
 
-            <div class="inner pad group">
+            <div class="inner pad group" data-animate="true">
 
-        		<div class="entry-content group">
-        			<?php the_content(); ?>
-        		</div>
+        		<?php the_content(); ?>
 
             </div> <!-- close inner -->
 
@@ -59,7 +57,7 @@
 
                 $odd = true;
                 get_template_part('partials/news', 'post');
-                $odd ? $odd = false : true;
+                $odd = $odd ? false : true;
 
             }?>
 
