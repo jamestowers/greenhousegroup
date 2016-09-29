@@ -39,8 +39,15 @@
 	<body <?php body_class('loading');?> >
 
     <div id="nav-overlay"></div>
-    <nav role="navigation" id="nav-header" class="flex flex-center">
-      <?php dropshop_nav_header(); ?>
+    <nav role="navigation" id="nav-header" class="flex-center">
+      <div class="col6">
+        <?php dropshop_nav_header(); ?>
+      </div>
+      <div id="contact" class="col6 last pad text-left">
+        <h2>Contact</h2>
+        <p><h3>Email: <a href="mailto:<?php echo get_option('admin_email');?>"><?php echo get_option('admin_email');?></a></h3></p>
+      </div>
+      
     </nav>
 
 		<div id="wrapper" class="group">
