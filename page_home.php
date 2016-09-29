@@ -8,8 +8,8 @@
         <div class="hero-overlay fullscreen flex flex-center flex-column">
             <div class="inner flex flex-center flex-column">
                 <div class="bubble"><?php get_template_part( 'partials/images', 'bubble' );?></div>
-                <h3 class="logo">Green House Group</h3>
-                <h1 class="hero-text text-center">Social media and Content creation and delivery</h1>
+                <h3 class="logo"><?php echo get_option('blogname');?></h3>
+                <h1 class="hero-text text-center"><?php echo get_option('blogdescription');?></h1>
             </div>
         </div>
 
