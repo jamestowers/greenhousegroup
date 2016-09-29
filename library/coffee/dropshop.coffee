@@ -105,7 +105,7 @@ class @Dropshop
   onScroll: ->
     window.ticking = false
     #unless dropshop.isMobile
-    if window.latestKnownScrollY > dropshop.sizes.headerHeight
+    if window.latestKnownScrollY > 100
       dropshop.$body.addClass 'scrolled'
     else
       dropshop.$body.removeClass 'scrolled'
@@ -114,6 +114,7 @@ class @Dropshop
     dropshop.$allMods.each (i, el) ->
       el = $(el)
       el.addClass 'animate' if el.visible(true)
+
     return
 
 

@@ -1,12 +1,42 @@
-[data-animate="true"]{
+[data-animate="moveup"]{
   opacity:0;
   transform: translateY(40px);
-  transition: all 2s cubic-bezier(0.86, 0, 0.07, 1);
+  transition: all 2s cubic-bezier(.08,.82,.17,1);
   &:nth-child(odd){
     transition-delay: 0.2s;
   }
   &.animate{
     opacity: 1;
     transform: translateY(0);
+  }
+}
+
+[data-animate="line"]{
+  &:before{
+    background: $grey6;
+    height:0px;
+    display: block;
+    content: '';
+    transition: height 0.8s cubic-bezier(.77,0,.18,1) 0.8s;
+  }
+  &.animate{
+    &:before{
+      height:100%;
+    }
+  }
+}
+
+[data-animate="width"]{
+  transition: width 0.6s cubic-bezier(.77,0,.18,1);
+  width: 0;
+  & > *{
+    transition: opacity 0.8s cubic-bezier(.77,0,.18,1) 0.6s;
+    opacity:0;
+  }
+  &.animate{
+    width: 100%;
+    & > *{
+      opacity:1;
+    }
   }
 }

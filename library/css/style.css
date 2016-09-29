@@ -517,6 +517,8 @@ section {
   section.dark {
     background: #111;
     color: #FFF; }
+    section.dark a {
+      color: #51FFB7; }
 
 .inner {
   width: 100%;
@@ -697,6 +699,11 @@ header.header {
       transition: all 1.4s ease-out 0.6s;
       fill: #51FFB7; }
 
+.line {
+  width: 1px;
+  height: 140px;
+  margin: 0 auto; }
+
 div#wrapper {
   width: 100%;
   min-height: 100%;
@@ -720,19 +727,40 @@ div#wrapper {
       -ms-flex: 1;
           flex: 1; }
 
-[data-animate="true"] {
+[data-animate="moveup"] {
   opacity: 0;
   -webkit-transform: translateY(40px);
       -ms-transform: translateY(40px);
           transform: translateY(40px);
-  transition: all 2s cubic-bezier(0.86, 0, 0.07, 1); }
-  [data-animate="true"]:nth-child(odd) {
+  transition: all 2s cubic-bezier(0.08, 0.82, 0.17, 1); }
+  [data-animate="moveup"]:nth-child(odd) {
     transition-delay: 0.2s; }
-  [data-animate="true"].animate {
+  [data-animate="moveup"].animate {
     opacity: 1;
     -webkit-transform: translateY(0);
         -ms-transform: translateY(0);
             transform: translateY(0); }
+
+[data-animate="line"]:before {
+  background: #CCC;
+  height: 0px;
+  display: block;
+  content: '';
+  transition: height 0.8s cubic-bezier(0.77, 0, 0.18, 1) 0.8s; }
+
+[data-animate="line"].animate:before {
+  height: 100%; }
+
+[data-animate="width"] {
+  transition: width 0.6s cubic-bezier(0.77, 0, 0.18, 1);
+  width: 0; }
+  [data-animate="width"] > * {
+    transition: opacity 0.8s cubic-bezier(0.77, 0, 0.18, 1) 0.6s;
+    opacity: 0; }
+  [data-animate="width"].animate {
+    width: 100%; }
+    [data-animate="width"].animate > * {
+      opacity: 1; }
 
 .tile {
   background: #111;
@@ -783,8 +811,8 @@ div#wrapper {
       font-weight: 400; }
     .tile .copy .tile-title {
       color: #FFF;
-      font-size: 60px;
-      font-size: 6rem; }
+      font-size: 40px;
+      font-size: 4rem; }
 
 .loading {
   overflow: hidden; }
@@ -843,6 +871,72 @@ div#wrapper {
 /**************************************
 HERO
 **************************************/
+.loading .scroll-indicator svg {
+  opacity: 0; }
+  .loading .scroll-indicator svg circle {
+    stroke-dasharray: 280;
+    stroke-dashoffset: 280; }
+
+.loaded .scroll-indicator h3 {
+  opacity: 1; }
+
+.loaded .scroll-indicator svg circle {
+  -webkit-animation: logo-outline-in 2s 1 cubic-bezier(0.79, 0.14, 0.15, 0.86) forwards 2.4s;
+          animation: logo-outline-in 2s 1 cubic-bezier(0.79, 0.14, 0.15, 0.86) forwards 2.4s; }
+
+.scrolled .scroll-indicator {
+  opacity: 1; }
+  .scrolled .scroll-indicator h3 {
+    opacity: 0;
+    transition-delay: 0s; }
+  .scrolled .scroll-indicator svg circle {
+    -webkit-animation: logo-outline-out 2s 1 cubic-bezier(0.79, 0.14, 0.15, 0.86) forwards;
+            animation: logo-outline-out 2s 1 cubic-bezier(0.79, 0.14, 0.15, 0.86) forwards; }
+
+.scroll-indicator {
+  color: #FFF;
+  height: 60px;
+  width: 60px;
+  position: relative;
+  transition: all 0.6s cubic-bezier(0.77, 0, 0.18, 1) 2s; }
+  .scroll-indicator h3 {
+    margin: 0;
+    opacity: 0;
+    transition: opacity 0.4s ease-in 4s; }
+  .scroll-indicator svg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    -webkit-transform: rotate(90deg);
+        -ms-transform: rotate(90deg);
+            transform: rotate(90deg);
+    height: 100%;
+    width: 100%; }
+    .scroll-indicator svg circle {
+      stroke: #FFF;
+      stroke-width: 1;
+      stroke-opacity: 0.6;
+      stroke-dasharray: 280;
+      stroke-dashoffset: 280;
+      fill: transparent;
+      transition: all 0.4s ease-in; }
+
+@-webkit-keyframes logo-outline-in {
+  to {
+    stroke-dashoffset: 0; } }
+
+@keyframes logo-outline-in {
+  to {
+    stroke-dashoffset: 0; } }
+
+@-webkit-keyframes logo-outline-out {
+  to {
+    stroke-dashoffset: 280; } }
+
+@keyframes logo-outline-out {
+  to {
+    stroke-dashoffset: 280; } }
+
 .hero-container {
   background: #111;
   min-height: 440px;
@@ -1138,51 +1232,51 @@ nav {
       nav#nav-header li:nth-child(1) {
         transition-delay: 0.1s; }
         nav#nav-header li:nth-child(1) a:after {
-          -webkit-transform: rotate(-3deg);
-              -ms-transform: rotate(-3deg);
-                  transform: rotate(-3deg); }
+          -webkit-transform: rotate(-8deg);
+              -ms-transform: rotate(-8deg);
+                  transform: rotate(-8deg); }
       nav#nav-header li:nth-child(2) {
         transition-delay: 0.2s; }
         nav#nav-header li:nth-child(2) a:after {
-          -webkit-transform: rotate(-11deg);
-              -ms-transform: rotate(-11deg);
-                  transform: rotate(-11deg); }
+          -webkit-transform: rotate(-1deg);
+              -ms-transform: rotate(-1deg);
+                  transform: rotate(-1deg); }
       nav#nav-header li:nth-child(3) {
         transition-delay: 0.3s; }
         nav#nav-header li:nth-child(3) a:after {
-          -webkit-transform: rotate(1deg);
-              -ms-transform: rotate(1deg);
-                  transform: rotate(1deg); }
+          -webkit-transform: rotate(-8deg);
+              -ms-transform: rotate(-8deg);
+                  transform: rotate(-8deg); }
       nav#nav-header li:nth-child(4) {
         transition-delay: 0.4s; }
         nav#nav-header li:nth-child(4) a:after {
-          -webkit-transform: rotate(-6deg);
-              -ms-transform: rotate(-6deg);
-                  transform: rotate(-6deg); }
+          -webkit-transform: rotate(-17deg);
+              -ms-transform: rotate(-17deg);
+                  transform: rotate(-17deg); }
       nav#nav-header li:nth-child(5) {
         transition-delay: 0.5s; }
         nav#nav-header li:nth-child(5) a:after {
-          -webkit-transform: rotate(-4deg);
-              -ms-transform: rotate(-4deg);
-                  transform: rotate(-4deg); }
+          -webkit-transform: rotate(-10deg);
+              -ms-transform: rotate(-10deg);
+                  transform: rotate(-10deg); }
       nav#nav-header li:nth-child(6) {
         transition-delay: 0.6s; }
         nav#nav-header li:nth-child(6) a:after {
-          -webkit-transform: rotate(0deg);
-              -ms-transform: rotate(0deg);
-                  transform: rotate(0deg); }
+          -webkit-transform: rotate(-7deg);
+              -ms-transform: rotate(-7deg);
+                  transform: rotate(-7deg); }
       nav#nav-header li:nth-child(7) {
         transition-delay: 0.7s; }
         nav#nav-header li:nth-child(7) a:after {
-          -webkit-transform: rotate(0deg);
-              -ms-transform: rotate(0deg);
-                  transform: rotate(0deg); }
+          -webkit-transform: rotate(2deg);
+              -ms-transform: rotate(2deg);
+                  transform: rotate(2deg); }
       nav#nav-header li:nth-child(8) {
         transition-delay: 0.8s; }
         nav#nav-header li:nth-child(8) a:after {
-          -webkit-transform: rotate(5deg);
-              -ms-transform: rotate(5deg);
-                  transform: rotate(5deg); }
+          -webkit-transform: rotate(-7deg);
+              -ms-transform: rotate(-7deg);
+                  transform: rotate(-7deg); }
       nav#nav-header li a {
         color: #111;
         font-size: 50px;
@@ -1316,8 +1410,8 @@ H1, H2, H3, H4, H5 STYLES
 ******************************************************************/
 .hero-text {
   font-family: "Manticore", sans-serif;
-  font-size: 40px;
-  font-size: 4rem;
+  font-size: 24px;
+  font-size: 2.4rem;
   text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.4); }
 
 .page-title {
@@ -1956,6 +2050,15 @@ HERO
       margin-top: -200px;
       position: relative;
       z-index: 3; }
+  .scroll-indicator {
+    position: absolute;
+    left: 50%;
+    bottom: 40px;
+    -webkit-transform: translateX(-50%);
+        -ms-transform: translateX(-50%);
+            transform: translateX(-50%);
+    height: 90px;
+    width: 90px; }
   .video-wrapper {
     position: relative;
     padding-bottom: 56.25%;
@@ -1978,6 +2081,9 @@ TILES
 *********************/
   .tile {
     padding-bottom: 28%; }
+    .tile .tile-title {
+      font-size: 60px;
+      font-size: 6rem; }
   /*********************
 WIDGETS
 *********************/

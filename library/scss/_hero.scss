@@ -2,6 +2,86 @@
 HERO
 **************************************/
 
+.loading{
+  .scroll-indicator{
+    svg{
+      opacity:0;
+      circle{
+        stroke-dasharray: 280;
+        stroke-dashoffset: 280;
+      }
+    }
+  }
+}
+
+.loaded{
+  .scroll-indicator{
+    h3{
+      opacity: 1;
+    }
+    svg{
+      circle{
+        animation: logo-outline-in 2s 1 cubic-bezier(.79,.14,.15,.86) forwards 2.4s;
+      }
+    }
+  }
+}
+.scrolled{
+  .scroll-indicator{
+    opacity: 1;
+    h3{
+      opacity: 0;
+      transition-delay: 0s;
+    }
+    svg{
+      circle{
+        animation: logo-outline-out 2s 1 cubic-bezier(.79,.14,.15,.86) forwards;
+      }
+    }
+  }
+
+}
+.scroll-indicator{
+  color: $white;
+  height:60px;
+  width:60px;
+  position: relative;
+  transition: all 0.6s cubic-bezier(.77,0,.18,1) 2s;
+  h3{
+    margin: 0;
+    opacity:0;
+    transition: opacity 0.4s ease-in 4s;
+  }
+  svg{
+    position: absolute;
+    top:0;
+    left:0;
+    transform: rotate(90deg);
+    height:100%;
+    width:100%;
+    circle{
+      stroke:$white;
+      stroke-width: 1;
+      stroke-opacity: 0.6;
+      stroke-dasharray: 280;
+      stroke-dashoffset: 280;
+      fill: transparent;
+      transition: all 0.4s ease-in;
+    }
+  }
+}
+
+@keyframes logo-outline-in {
+  to {
+    stroke-dashoffset: 0;
+  }
+}
+@keyframes logo-outline-out {
+  to {
+    stroke-dashoffset: 280;
+  }
+}
+
 .hero-container{
   background: $grey1;
   min-height: 440px;

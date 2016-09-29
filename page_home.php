@@ -10,12 +10,18 @@
                 <div class="bubble"><?php get_template_part( 'partials/images', 'bubble' );?></div>
                 <h3 class="logo"><?php echo get_option('blogname');?></h3>
                 <h1 class="hero-text text-center"><?php echo get_option('blogdescription');?></h1>
+                <div class="scroll-indicator flex-center">
+                    <svg width="90px" height="90px" viewBox="0 0 90 90" version="1.1" xmlns="http://www.w3.org/2000/svg"><g transform="translate(-676.000000, -785.000000)" stroke="#FFFFFF"><g transform="translate(29.000000, 27.000000)"><circle id="Oval" cx="692" cy="803" r="44"></circle></g></g></svg>
+                    <h3>scroll</h3>
+                </div>
             </div>
         </div>
 
+        <div class="line" data-animate="line"></div>
+
         <section>
 
-            <div class="inner pad group" data-animate="true">
+            <div class="inner pad group" data-animate="moveup">
 
         		<?php the_content(); ?>
 
@@ -23,12 +29,27 @@
 
         </section>
 
+        <div class="line" data-animate="line"></div>
+
         <section class="pad">
             
             <h1 class="page-title">Who we work with</h1>
 
             <?php echo do_shortcode('[ghg_clients]');?>
         </section>
+
+        <div class="line" data-animate="line"></div>
+        
+        <div class="pad">
+        <section class="pad dark"  data-animate="width">
+            <div class="inner">
+                <h2>Contact</h2>
+                <p><h3>Email: <a href="mailto:<?php echo get_option('admin_email');?>"><?php echo get_option('admin_email');?></a></h3></p>
+            </div>
+        </section>
+        </div>
+
+        <div class="line" data-animate="line"></div>
 
 	<?php endwhile; ?>
 

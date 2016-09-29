@@ -10200,7 +10200,7 @@ window.matchMedia||(window.matchMedia=function(){"use strict";var a=window.style
 
     Dropshop.prototype.onScroll = function() {
       window.ticking = false;
-      if (window.latestKnownScrollY > dropshop.sizes.headerHeight) {
+      if (window.latestKnownScrollY > 100) {
         dropshop.$body.addClass('scrolled');
       } else {
         dropshop.$body.removeClass('scrolled');
@@ -10314,7 +10314,7 @@ window.matchMedia||(window.matchMedia=function(){"use strict";var a=window.style
   };
 
   $(window).load(function() {
-    return dropshop.$body.removeClass('loading');
+    return dropshop.$body.removeClass('loading').addClass('loaded');
   });
 
   $(window).scroll(function() {

@@ -29,6 +29,9 @@ section{
   &.dark{
     background: $grey1;
     color: $white;
+    a{
+      color: $color-primary;
+    }
   }
 }
 .inner{

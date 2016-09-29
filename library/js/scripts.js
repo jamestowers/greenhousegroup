@@ -79,7 +79,7 @@
   };
 
   $(window).load(function() {
-    return dropshop.$body.removeClass('loading');
+    return dropshop.$body.removeClass('loading').addClass('loaded');
   });
 
   $(window).scroll(function() {

@@ -120,7 +120,7 @@
 
     Dropshop.prototype.onScroll = function() {
       window.ticking = false;
-      if (window.latestKnownScrollY > dropshop.sizes.headerHeight) {
+      if (window.latestKnownScrollY > 100) {
         dropshop.$body.addClass('scrolled');
       } else {
         dropshop.$body.removeClass('scrolled');

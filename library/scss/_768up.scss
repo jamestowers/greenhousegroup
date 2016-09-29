@@ -44,6 +44,15 @@ HERO
   }
 }
 
+.scroll-indicator{
+  position: absolute;
+  left: 50%;
+  bottom: $padding*2;
+  transform: translateX(-50%);
+  height:90px;
+  width:90px;
+}
+
 
 .video-wrapper{
   position: relative;
@@ -75,6 +84,9 @@ TILES
 *********************/
 .tile{
   padding-bottom: 28%;
+  .tile-title{
+    @include font-size(6);
+  }
 }
 
 
