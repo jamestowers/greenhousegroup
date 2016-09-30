@@ -2,6 +2,7 @@
 					<div class="line" data-animate="line"></div>
 					
 					<div class="pad">
+					<a name="contact"></a>
 					<section class="pad dark"  data-animate="width">
 					    <div class="inner">
 					        <h2>Contact</h2>
@@ -11,7 +12,7 @@
 					</div>
 
 					<div class="line" data-animate="line"></div>
-					
+
 				</div> <!-- close wrapper -->
 
 			<footer class="footer group">
