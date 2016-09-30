@@ -1,6 +1,7 @@
 <?php get_header(); ?>
 	
-	<?php dropshop_hero_image( get_the_title(), get_option('page_for_posts') );?>
+	<?php $page_id = get_option('page_for_posts');?>
+	<?php dropshop_hero_image( get_the_title($page_id), $page_id );?>
 
 	<div class="inner pad">
 
