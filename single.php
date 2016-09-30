@@ -37,8 +37,6 @@
 
 		</div>
 
-		<?php get_sidebar(); ?>
-
 	</div> <!-- close inner -->
 
 <?php get_footer(); ?>
