@@ -1,0 +1,18 @@
+.plyr{
+  &.plyr--video{
+    .plyr__controls{
+      button.tab-focus:focus, 
+      button:hover{
+        background: $color-primary;
+      }
+    }
+  }
+  .plyr__play-large{
+    background: $color-primary;
+    border: 4px solid $color-primary;
+  }
+  .plyr__progress--played, 
+  .plyr__volume--display{
+    color: $color-primary;
+  }
+}
