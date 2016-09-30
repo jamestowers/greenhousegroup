@@ -102,7 +102,7 @@
       remove_menu_page('mf_dispatcher'); // Tools
       remove_menu_page('wpcf7'); // Tools
     }
-    remove_menu_page('upload.php'); // Media
+    //remove_menu_page('upload.php'); // Media
     remove_menu_page('link-manager.php'); // Links
     remove_menu_page('edit-comments.php'); // Comments
   }

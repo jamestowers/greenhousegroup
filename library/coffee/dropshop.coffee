@@ -4,6 +4,7 @@ class @Dropshop
     console.log '[Dropshop] Initialising...'
     @$doc = $(document)
     @$body = $('body')
+    @$hero = $('.hero-container')
     @$navWrapper = $('#nav-overlay')
     @init()
 
@@ -17,7 +18,7 @@ class @Dropshop
 
   onPageLoad: ->
     console.log '[Dropshop] onPageLoad'
-    @preloadBgImage()
+    @preloadBgImage( @$hero )
     picturefill()
     @setEventListeners()
     @$body.removeClass 'nav-open show-nav'
@@ -35,23 +36,25 @@ class @Dropshop
 
   setWidths:->
     console.log '[Dropshop] setting page dims'
-    @sizes = 
+    @$navWrapper.css
+      height: window.dims.navWidth*3
+      width: window.dims.navWidth*3
+      top: -window.dims.navWidth*1.5
+      left: -window.dims.navWidth*0.5
+      
+    ###@sizes = 
       windowWidth: $(window).width()
       windowHeight: $(window).height()
       headerHeight: $('header.header').outerHeight()
     @isMobile = @sizes.windowWidth < 580
     @navWidth = if @sizes.windowWidth > @sizes.windowHeight then @sizes.windowWidth else @sizes.windowHeight
-
-    @$navWrapper.css
-      height: @navWidth*3
-      width: @navWidth*3
-      top: -@navWidth*1.5
-      left: -@navWidth*0.5
+    ###
+    
       #width: @sizes.windowWidth
 
     # Amend #wrapper height in stylesheet so no need to do it on each page load
-    css = '.fullscreen { min-height : '+ @sizes.windowHeight + 'px }'
-    $sheet = document.getElementById('styles')
+    #css = '.fullscreen { min-height : '+ window.dims.windowHeight + 'px }'
+    ###$sheet = document.getElementById('styles')
     unless $sheet
       head = document.head or document.getElementsByTagName('head')[0]
       $sheet = document.createElement('style')
@@ -60,7 +63,7 @@ class @Dropshop
       $sheet.setAttribute("id", "styles")
       head.appendChild $sheet
     $sheet = document.styleSheets[(document.styleSheets.length - 1)]
-    @addCSSRule($sheet, '.fullscreen', 'min-height :' + (@sizes.windowHeight) + 'px' )
+    @addCSSRule($sheet, '.fullscreen', 'min-height :' + (window.dims.windowHeight) + 'px' )
 
   addCSSRule: (sheet, selector, rules, index) ->
     myrules = if sheet.cssRules then sheet.cssRules else sheet.rules
@@ -77,27 +80,27 @@ class @Dropshop
         sheet.insertRule selector + '{' + rules + '}', index
       else if 'addRule' of sheet
         sheet.addRule selector, rules, index
-      return
+      return###
 
 
-  preloadBgImage: ->
-    picture = $('.fullscreen picture')
+  preloadBgImage: (parent)->
+    picture = $(parent).find('picture')
     return unless picture.length
-    picture.each (i, el)->
-      console.log '[App] loading background image'
-      el = $(el)
-      img = el.find 'img'
-      imgLoad = imagesLoaded(el);
-      imgLoad.on 'progress', (instance, image) ->
-        if typeof image.img.currentSrc == 'undefined'
-          imgSrc = image.img.src
-        else
-          imgSrc = image.img.currentSrc
-        #result = if image.isLoaded then 'loaded' else 'broken'
-        if image.isLoaded
-          $(image.img).parent().addClass 'loaded'
-          console.log 'Image ' + imgSrc + ' loaded'
+    console.log '[App] lazy loading image'
+    el = $(picture)
+    img = el.find 'img'
+    imgLoad = imagesLoaded(el);
+    imgLoad.on 'progress', (instance, image) ->
+      if typeof image.img.currentSrc == 'undefined'
+        imgSrc = image.img.src
+      else
+        imgSrc = image.img.currentSrc
 
+      if image.isLoaded
+        $(image.img).parent().addClass 'loaded'
+        console.log 'Image ' + imgSrc + ' loaded'
+        dropshop.$body.removeClass('loading').addClass 'loaded'
+      
 
   ######################
   ## ON SCROLL

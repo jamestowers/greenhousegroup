@@ -38,18 +38,6 @@
             <?php echo do_shortcode('[ghg_clients]');?>
         </section>
 
-        <div class="line" data-animate="line"></div>
-        
-        <div class="pad">
-        <section class="pad dark"  data-animate="width">
-            <div class="inner">
-                <h2>Contact</h2>
-                <p><h3>Email: <a href="mailto:<?php echo get_option('admin_email');?>"><?php echo get_option('admin_email');?></a></h3></p>
-            </div>
-        </section>
-        </div>
-
-        <div class="line" data-animate="line"></div>
 
 	<?php endwhile; ?>
 
@@ -61,13 +49,15 @@
     endif; ?>
 
     
-        <?php /*$args = array(
+        <?php $args = array(
             'post_type' => 'post'
             );
 
         $news_posts = new WP_Query($args);
 
         if ( $news_posts->have_posts() ) { ?>
+
+            <div class="line" data-animate="line"></div>
             
             <h1 class="page-title">News</h1>
 
@@ -76,14 +66,12 @@
                 <?php while ( $news_posts->have_posts() ) {
                 $news_posts->the_post();
 
-                $odd = true;
                 get_template_part('partials/news', 'post');
-                $odd = $odd ? false : true;
 
             }?>
 
             </section>
-        <?php } */?>
+        <?php } ?>
 
 
 <?php get_footer(); ?>

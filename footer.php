@@ -1,4 +1,17 @@
 					
+					<div class="line" data-animate="line"></div>
+					
+					<div class="pad">
+					<section class="pad dark"  data-animate="width">
+					    <div class="inner">
+					        <h2>Contact</h2>
+					        <p><h3>Email: <a href="mailto:<?php echo get_option('admin_email');?>"><?php echo get_option('admin_email');?></a></h3></p>
+					    </div>
+					</section>
+					</div>
+
+					<div class="line" data-animate="line"></div>
+					
 				</div> <!-- close wrapper -->
 
 			<footer class="footer group">
@@ -9,37 +22,13 @@
 
 				</div>
 
-				<p class="small source-org">&copy; <?php echo date('Y'); ?> <?php bloginfo( 'name' ); ?>.</p>
+				<p class="small source-org text-center">&copy; <?php echo date('Y'); ?> <?php bloginfo( 'name' ); ?>.</p>
 
 			</footer>
 
 		</div> <!-- close wrapper -->
 
 		<?php wp_footer(); ?>
-
-
-		<!-- FACEBOOK -->
-		<?php $social_options = get_option("dropshop_theme_social_options");?>
-		<?php if( !empty($social_options) && $social_options['facebook_app_id'] !== "" ){ ?>
-
-			<script>
-			  window.fbAsyncInit = function() {
-			    FB.init({
-			      appId      : '<?php echo $social_options["facebook_app_id"];?>',
-			      xfbml      : true,
-			      version    : 'v2.5'
-			    });
-			  };
-
-			  (function(d, s, id){
-			     var js, fjs = d.getElementsByTagName(s)[0];
-			     if (d.getElementById(id)) {return;}
-			     js = d.createElement(s); js.id = id;
-			     js.src = "//connect.facebook.net/en_US/sdk.js";
-			     fjs.parentNode.insertBefore(js, fjs);
-			   }(document, 'script', 'facebook-jssdk'));
-			</script>
-		<?php }?>
 
 	</body>
 

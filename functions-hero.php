@@ -3,11 +3,11 @@
 /************* THUMBNAIL SIZE OPTIONS *************/
 
 // Thumbnail sizes
-add_image_size( 'hero-image-xlarge-desktop', 2200, 1200, true );
-add_image_size( 'hero-image-large-desktop', 1440, 900, true );
-add_image_size( 'hero-image-desktop', 1100, 700, true );
-add_image_size( 'hero-image-tablet-portrait', 750, 1000, true );
-add_image_size( 'hero-image-mobile-portrait', 350, 500, true );
+add_image_size( 'hero-image-xlarge', 2200, 1200, true );
+add_image_size( 'hero-image-large', 1440, 900, true );
+add_image_size( 'hero-image-large-portrait', 900, 1440, true );
+add_image_size( 'hero-image-medium', 1100, 700, true );
+add_image_size( 'hero-image-mobile-portrait', 750, 1000, true );
 
 
 /*
@@ -21,10 +21,10 @@ add_filter( 'image_size_names_choose', 'dropshop_custom_image_sizes' );
 
 function dropshop_custom_image_sizes( $sizes ) {
     return array_merge( $sizes, array(
-      'hero-image-xlarge-desktop' => __('Very large desktop'),
-      'hero-image-large-desktop' => __('Large desktop'),
-      'hero-image-desktop' => __('Desktop'),
-      'hero-image-tablet-portrait' => __('Tablet portrait'),
+      'hero-image-xlarge' => __('Very large desktop'),
+      'hero-image-large' => __('Large desktop'),
+      'hero-image-medium' => __('Desktop'),
+      'hero-image-large-portrait' => __('Tablet portrait'),
       'hero-image-mobile-portrait' => __('Mobile portrait')
     ) );
 }
@@ -93,10 +93,13 @@ function dropshop_using_custom_featured_image_metabox_plugin() {
   return method_exists('Custom_Featured_Image_Metabox', 'get_instance');
 }
 
-function dropshop_hero_image( $headline_text = "" ){
-  global $post;
+function dropshop_hero_image( $headline_text = "", $post_id = null ){
+  if(!$post_id){
+    global $post;
+    $post_id = $post->ID;
+  }
   // If we are using the custom-featured-image-metabox plugin we can check to see if the hero image has been enabled on this post/page
-  if( dropshop_using_custom_featured_image_metabox_plugin() && get_post_meta($post->ID, 'enable_cover_image', true) !== '1'){
+  if( dropshop_using_custom_featured_image_metabox_plugin() && get_post_meta($post_id, 'enable_cover_image', true) !== '1'){
     return;
   }
   
@@ -137,7 +140,7 @@ function dropshop_hero_image( $headline_text = "" ){
         }
       }else{
         if ( has_post_thumbnail() ) {
-          $image_id = get_post_thumbnail_id( $post->ID );
+          $image_id = get_post_thumbnail_id( $post_id );
           echo do_shortcode('[responsive imageid="'.$image_id.'"]');
         }
       }

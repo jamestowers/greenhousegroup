@@ -79,7 +79,7 @@
   };
 
   $(window).load(function() {
-    return dropshop.$body.removeClass('loading').addClass('loaded');
+    return console.log('[Scripts] Page fully loaded');
   });
 
   $(window).scroll(function() {

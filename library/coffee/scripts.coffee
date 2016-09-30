@@ -82,7 +82,7 @@ requestTick = ->
 
 
 $(window).load ->
-  dropshop.$body.removeClass('loading').addClass 'loaded'
+  console.log '[Scripts] Page fully loaded'
 
 $(window).scroll ->
   window.latestKnownScrollY = window.scrollY

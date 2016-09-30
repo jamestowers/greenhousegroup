@@ -1,8 +1,6 @@
 <?php get_header(); ?>
 	
-	<?php dropshop_hero_image( get_the_title() );?>
-
-	<?php wp_reset_query();?>
+	<?php dropshop_hero_image( get_the_title(), get_option('page_for_posts') );?>
 
 	<div class="inner pad">
 
