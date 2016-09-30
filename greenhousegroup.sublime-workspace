@@ -4,6 +4,10 @@
 		"selected_items":
 		[
 			[
+				"is",
+				"is_featured"
+			],
+			[
 				"windo",
 				"windowHeight"
 			],
@@ -510,29 +514,16 @@
 			[
 				"db",
 				"db_tracks_array"
-			],
-			[
-				"pl",
-				"playlist"
 			]
 		]
 	},
 	"buffers":
 	[
 		{
-			"file": "functions-hero.php",
+			"file": "/Users/james/projects/greenhousegroup/wp-content/plugins/wp-clients/admin/class-wp-clients-admin.php",
 			"settings":
 			{
-				"buffer_size": 6440,
-				"encoding": "UTF-8",
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "library/scss/_tiles.scss",
-			"settings":
-			{
-				"buffer_size": 888,
+				"buffer_size": 7503,
 				"encoding": "UTF-8",
 				"line_ending": "Unix"
 			}
@@ -541,34 +532,42 @@
 			"file": "/Users/james/projects/greenhousegroup/wp-content/plugins/wp-clients/public/class-wp-clients-public.php",
 			"settings":
 			{
-				"buffer_size": 3935,
+				"buffer_size": 5483,
 				"encoding": "UTF-8",
 				"line_ending": "Unix"
 			}
 		},
 		{
-			"file": "library/coffee/scripts.coffee",
+			"file": "page_home.php",
 			"settings":
 			{
-				"buffer_size": 2539,
+				"buffer_size": 2264,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "library/scss/_tiles.scss",
+			"settings":
+			{
+				"buffer_size": 1394,
 				"encoding": "UTF-8",
 				"line_ending": "Unix"
 			}
 		},
 		{
-			"file": "functions.php",
+			"file": "library/scss/_768up.scss",
 			"settings":
 			{
-				"buffer_size": 8176,
+				"buffer_size": 1795,
 				"encoding": "UTF-8",
 				"line_ending": "Unix"
 			}
 		},
 		{
-			"file": "library/coffee/dropshop.coffee",
+			"file": "library/scss/_1030up.scss",
 			"settings":
 			{
-				"buffer_size": 4018,
+				"buffer_size": 603,
 				"encoding": "UTF-8",
 				"line_ending": "Unix"
 			}
@@ -653,50 +652,56 @@
 	[
 		"/Users/james/projects/greenhousegroup/wp-content/themes/greenhousegroup",
 		"/Users/james/projects/greenhousegroup/wp-content/themes/greenhousegroup/library",
-		"/Users/james/projects/greenhousegroup/wp-content/themes/greenhousegroup/library/scss",
 		"/Users/james/projects/greenhousegroup/wp-content/themes/greenhousegroup/partials",
 		"/Users/james/projects/greenhousegroup/wp-content/plugins/wp-clients",
 		"/Users/james/projects/greenhousegroup/wp-content/plugins/wp-clients/admin",
+		"/Users/james/projects/greenhousegroup/wp-content/plugins/wp-clients/includes",
 		"/Users/james/projects/greenhousegroup/wp-content/plugins/wp-clients/public"
 	],
 	"file_history":
 	[
+		"/Users/james/projects/greenhousegroup/wp-content/themes/greenhousegroup/library/scss/_1640up.scss",
+		"/Users/james/projects/greenhousegroup/wp-content/themes/greenhousegroup/library/node_modules/localtunnel/node_modules/yargs/index.js",
+		"/Users/james/projects/greenhousegroup/wp-content/plugins/wp-clients/includes/class-wp-clients.php",
+		"/Users/james/projects/mia/wp-content/plugins/wp-timeline/includes/class-wp-timeline.php",
+		"/Users/james/projects/mia/wp-content/plugins/wp-timeline/admin/class-wp-timeline-admin.php",
+		"/Users/james/projects/mia/wp-content/plugins/wp-post-projects/admin/class-wp-post-projects-meta-boxes.php",
+		"/Users/james/projects/greenhousegroup/wp-content/themes/greenhousegroup/page_home.php",
+		"/Users/james/projects/greenhousegroup/wp-content/themes/greenhousegroup/library/coffee/dropshop.coffee",
+		"/Users/james/projects/greenhousegroup/wp-content/plugins/wp-clients/public/class-wp-clients-public.php",
+		"/Users/james/projects/greenhousegroup/wp-content/themes/greenhousegroup/library/scss/_plyr.scss",
+		"/Users/james/projects/greenhousegroup/wp-content/themes/greenhousegroup/library/scss/style.scss",
+		"/Users/james/projects/greenhousegroup/wp-content/themes/greenhousegroup/functions-hero.php",
+		"/Users/james/projects/greenhousegroup/wp-content/themes/greenhousegroup/library/scss/_tiles.scss",
+		"/Users/james/projects/greenhousegroup/wp-content/themes/greenhousegroup/single.php",
+		"/Users/james/projects/greenhousegroup/wp-content/themes/greenhousegroup/index.php",
+		"/Users/james/projects/greenhousegroup/wp-content/themes/greenhousegroup/partials/news-post.php",
+		"/Users/james/projects/greenhousegroup/wp-content/themes/greenhousegroup/footer.php",
+		"/Users/james/projects/greenhousegroup/wp-content/plugins/wp-clients/admin/class-wp-clients-admin.php",
+		"/Users/james/projects/greenhousegroup/wp-content/themes/greenhousegroup/functions.php",
+		"/Users/james/projects/greenhousegroup/wp-content/themes/greenhousegroup/library/coffee/scripts.coffee",
 		"/Users/james/projects/greenhousegroup/wp-content/themes/greenhousegroup/header.php",
 		"/Users/james/projects/greenhousegroup/wp-content/themes/greenhousegroup/functions-cleanup.php",
 		"/Users/james/projects/greenhousegroup/wp-content/themes/greenhousegroup/library/scss/_1030up.scss",
 		"/Users/james/projects/greenhousegroup/wp-content/themes/greenhousegroup/library/scss/_1240up.scss",
 		"/Users/james/projects/greenhousegroup/wp-content/themes/greenhousegroup/library/js/all.js",
 		"/Users/james/projects/greenhousegroup/wp-content/themes/greenhousegroup/library/scss/_layout.scss",
-		"/Users/james/projects/greenhousegroup/wp-content/themes/greenhousegroup/library/scss/_tiles.scss",
 		"/Users/james/projects/greenhousegroup/wp-content/themes/greenhousegroup/library/scss/_768up.scss",
-		"/Users/james/projects/greenhousegroup/wp-content/themes/greenhousegroup/library/scss/_1640up.scss",
 		"/Users/james/projects/greenhousegroup/wp-content/themes/greenhousegroup/library/scss/_animations.scss",
 		"/Users/james/projects/greenhousegroup/wp-content/themes/greenhousegroup/library/scss/_type.scss",
 		"/Users/james/projects/greenhousegroup/wp-content/themes/greenhousegroup/library/scss/_hero.scss",
-		"/Users/james/projects/greenhousegroup/wp-content/themes/greenhousegroup/page_home.php",
-		"/Users/james/projects/greenhousegroup/wp-content/themes/greenhousegroup/library/coffee/dropshop.coffee",
 		"/Users/james/projects/greenhousegroup/wp-content/themes/greenhousegroup/library/scss/_variables.scss",
 		"/Users/james/projects/greenhousegroup/wp-content/themes/greenhousegroup/library/scss/_utils.scss",
-		"/Users/james/projects/greenhousegroup/wp-content/themes/greenhousegroup/functions-hero.php",
-		"/Users/james/projects/greenhousegroup/wp-content/plugins/wp-clients/public/class-wp-clients-public.php",
 		"/Users/james/projects/greenhousegroup/wp-content/themes/greenhousegroup/library/gulpfile.js",
 		"/Users/james/projects/greenhousegroup/wp-content/themes/greenhousegroup/library/js/vendor/in-view.min.js",
 		"/Users/james/projects/greenhousegroup/wp-content/themes/greenhousegroup/library/images/Oval.svg",
 		"/Users/james/projects/greenhousegroup/wp-content/themes/greenhousegroup/library/images/scroll.svg",
 		"/Users/james/projects/rob-lake/wp-content/themes/rob-lake/library/scss/_layout.scss",
-		"/Users/james/projects/greenhousegroup/wp-content/themes/greenhousegroup/library/coffee/scripts.coffee",
 		"/Users/james/projects/rob-lake/wp-content/themes/rob-lake/library/scss/_hero.scss",
-		"/Users/james/projects/greenhousegroup/wp-content/themes/greenhousegroup/functions.php",
 		"/Users/james/projects/greenhousegroup/wp-content/themes/greenhousegroup/library/scss/_nav.scss",
-		"/Users/james/projects/greenhousegroup/wp-content/plugins/wp-clients/admin/class-wp-clients-admin.php",
-		"/Users/james/projects/greenhousegroup/wp-content/themes/greenhousegroup/library/scss/style.scss",
-		"/Users/james/projects/greenhousegroup/wp-content/themes/greenhousegroup/partials/news-post.php",
-		"/Users/james/projects/greenhousegroup/wp-content/themes/greenhousegroup/index.php",
 		"/Users/james/projects/greenhousegroup/wp-content/themes/greenhousegroup/partials/news-footer.php",
-		"/Users/james/projects/greenhousegroup/wp-content/themes/greenhousegroup/single.php",
 		"/Users/james/projects/greenhousegroup/wp-content/themes/greenhousegroup/library/scss/_loading.scss",
 		"/Users/james/projects/greenhousegroup/wp-content/themes/greenhousegroup/partials/loading.php",
-		"/Users/james/projects/greenhousegroup/wp-content/plugins/wp-clients/includes/class-wp-clients.php",
 		"/Users/james/projects/greenhousegroup/wp-content/themes/greenhousegroup/library/scss/_grid.scss",
 		"/Users/james/projects/greenhousegroup/wp-content/themes/greenhousegroup/library/images/bubble.svg",
 		"/Users/james/projects/rob-lake/wp-content/themes/rob-lake/library/scss/_variables.scss",
@@ -706,7 +711,6 @@
 		"/Users/james/projects/redbull/resources/assets/coffee/dropshop.coffee",
 		"/Users/james/projects/mia/wp-content/themes/mia/library/coffee/dropshop.coffee",
 		"/Users/james/projects/greenhousegroup/wp-content/themes/greenhousegroup/library/js/vendor/jquery.2.1.4.js",
-		"/Users/james/projects/greenhousegroup/wp-content/themes/greenhousegroup/footer.php",
 		"/Users/james/projects/greenhousegroup/wp-content/themes/greenhousegroup/library/js/scripts.js",
 		"/Users/james/projects/greenhousegroup/wp-content/themes/greenhousegroup/functions-theme-options.php",
 		"/Users/james/projects/mia/wp-content/themes/mia/library/scss/style.scss",
@@ -783,12 +787,7 @@
 		"/Users/james/projects/redbull/resources/views/emails/reward.blade.php",
 		"/Users/james/projects/redbull/resources/views/reports/tabs.blade.php",
 		"/Users/james/projects/redbull/app/RewardType.php",
-		"/Users/james/projects/redbull/resources/views/rewards/index.blade.php",
-		"/Users/james/projects/redbull/resources/views/instant-rewards/list.blade.php",
-		"/Users/james/projects/redbull/resources/views/pages/instant-rewards.blade.php",
-		"/Users/james/projects/redbull/resources/views/users/edit.blade.php",
-		"/Users/james/projects/redbull/app/ViewComposers/EmployeeListComposer.php",
-		"/Users/james/projects/redbull/app/ViewComposers/InvitableRewardDropdownComposer.php"
+		"/Users/james/projects/redbull/resources/views/rewards/index.blade.php"
 	],
 	"find":
 	{
@@ -847,6 +846,25 @@
 		"case_sensitive": true,
 		"find_history":
 		[
+			"$client_id",
+			"$client->ID",
+			"featured",
+			"$non_featured_args",
+			"$args",
+			"'custom_author_name'",
+			"'wp_ratings'",
+			"'wp-clients",
+			"publication_date",
+			"save_featured_client_meta",
+			"hide-from-timeline",
+			"is_featured",
+			"client_info",
+			"project",
+			"render_project_info_meta_",
+			"directory_child_post_types",
+			"project",
+			"get_option('page_for_posts')",
+			"$post->ID",
 			", true",
 			"portrait_",
 			"@1x",
@@ -955,26 +973,7 @@
 			"index",
 			"teams",
 			"<i class=\"icon-",
-			"Selected",
-			"attachRewardToUser",
-			"message",
-			"That person",
-			"unsentInstantRewardsCount",
-			"el",
-			"$users",
-			"$user",
-			"user",
-			"team",
-			"$user",
-			"user",
-			"invitees",
-			"amount",
-			"groupedRequests",
-			"requests",
-			"postsArray",
-			"Invite saved as",
-			"response",
-			"->get()"
+			"Selected"
 		],
 		"highlight": false,
 		"in_selection": false,
@@ -1125,49 +1124,113 @@
 			[
 				{
 					"buffer": 0,
-					"file": "functions-hero.php",
+					"file": "/Users/james/projects/greenhousegroup/wp-content/plugins/wp-clients/admin/class-wp-clients-admin.php",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 6440,
+						"buffer_size": 7503,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								989,
-								989
+								5890,
+								5890
 							]
 						],
 						"settings":
 						{
 							"syntax": "Packages/PHP/PHP.sublime-syntax",
-							"tab_size": 2,
-							"translate_tabs_to_spaces": true
+							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
-						"translation.y": 0.0,
+						"translation.y": 1102.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 3,
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "/Users/james/projects/greenhousegroup/wp-content/plugins/wp-clients/public/class-wp-clients-public.php",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 5483,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								4605,
+								4605
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/PHP/PHP.sublime-syntax",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 3631.0,
 						"zoom_level": 1.0
 					},
 					"stack_index": 2,
 					"type": "text"
 				},
 				{
-					"buffer": 1,
-					"file": "library/scss/_tiles.scss",
+					"buffer": 2,
+					"file": "page_home.php",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 888,
+						"buffer_size": 2264,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								8,
-								8
+								1322,
+								1322
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/PHP/PHP.sublime-syntax",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 643.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 1,
+					"type": "text"
+				}
+			]
+		},
+		{
+			"selected": 0,
+			"sheets":
+			[
+				{
+					"buffer": 3,
+					"file": "library/scss/_tiles.scss",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1394,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								157,
+								157
 							]
 						],
 						"settings":
@@ -1177,165 +1240,68 @@
 							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 21.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 3,
-					"type": "text"
-				},
-				{
-					"buffer": 2,
-					"file": "/Users/james/projects/greenhousegroup/wp-content/plugins/wp-clients/public/class-wp-clients-public.php",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 3935,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								3609,
-								3609
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/PHP/PHP.sublime-syntax",
-							"translate_tabs_to_spaces": false
-						},
-						"translation.x": 0.0,
-						"translation.y": 2267.0,
+						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
 					"stack_index": 0,
 					"type": "text"
 				},
 				{
-					"buffer": 3,
-					"file": "library/coffee/scripts.coffee",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 2539,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								1738,
-								1738
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/Better CoffeeScript/CoffeeScript.tmLanguage",
-							"tab_size": 2,
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 1083.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 5,
-					"type": "text"
-				},
-				{
 					"buffer": 4,
-					"file": "functions.php",
+					"file": "library/scss/_768up.scss",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 8176,
+						"buffer_size": 1795,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								2494,
-								2494
+								1222,
+								1222
 							]
 						],
 						"settings":
 						{
-							"syntax": "Packages/PHP/PHP.sublime-syntax",
+							"syntax": "Packages/SCSS/SCSS.tmLanguage",
 							"tab_size": 2,
 							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 927.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 6,
-					"type": "text"
-				}
-			]
-		},
-		{
-			"selected": 1,
-			"sheets":
-			[
-				{
-					"buffer": 5,
-					"file": "library/coffee/dropshop.coffee",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 4018,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								602,
-								602
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/Better CoffeeScript/CoffeeScript.tmLanguage",
-							"tab_size": 2,
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
+						"translation.y": 1497.0,
 						"zoom_level": 1.0
 					},
 					"stack_index": 4,
 					"type": "text"
 				},
 				{
-					"buffer": 0,
-					"file": "functions-hero.php",
+					"buffer": 5,
+					"file": "library/scss/_1030up.scss",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 6440,
+						"buffer_size": 603,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								980,
-								980
+								403,
+								403
 							]
 						],
 						"settings":
 						{
-							"syntax": "Packages/PHP/PHP.sublime-syntax",
-							"tab_size": 2,
-							"translate_tabs_to_spaces": true
+							"syntax": "Packages/SCSS/SCSS.tmLanguage"
 						},
 						"translation.x": 0.0,
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 1,
+					"stack_index": 5,
 					"type": "text"
 				}
 			]
@@ -1369,7 +1335,7 @@
 		"cols":
 		[
 			0.0,
-			0.474916249084,
+			0.5,
 			1.0
 		],
 		"rows":
@@ -1401,16 +1367,64 @@
 		"selected_items":
 		[
 			[
-				"cleanup",
-				"greenhousegroup/functions-cleanup.php"
+				"home",
+				"greenhousegroup/page_home.php"
+			],
+			[
+				"16",
+				"greenhousegroup/library/scss/_1640up.scss"
+			],
+			[
+				"10",
+				"greenhousegroup/library/scss/_1030up.scss"
+			],
+			[
+				"768",
+				"greenhousegroup/library/scss/_768up.scss"
+			],
+			[
+				"tiles",
+				"greenhousegroup/library/scss/_tiles.scss"
+			],
+			[
+				"dropshop",
+				"greenhousegroup/library/coffee/dropshop.coffee"
+			],
+			[
+				"sty",
+				"greenhousegroup/library/scss/style.scss"
+			],
+			[
+				"style",
+				"greenhousegroup/library/scss/style.scss"
 			],
 			[
 				"hero",
 				"greenhousegroup/functions-hero.php"
 			],
 			[
-				"10",
-				"greenhousegroup/library/scss/_1030up.scss"
+				"index",
+				"greenhousegroup/index.php"
+			],
+			[
+				"singl",
+				"greenhousegroup/single.php"
+			],
+			[
+				"tile",
+				"greenhousegroup/library/scss/_tiles.scss"
+			],
+			[
+				"new",
+				"greenhousegroup/partials/news-post.php"
+			],
+			[
+				"footer",
+				"greenhousegroup/footer.php"
+			],
+			[
+				"cleanup",
+				"greenhousegroup/functions-cleanup.php"
 			],
 			[
 				"12",
@@ -1419,10 +1433,6 @@
 			[
 				"script",
 				"greenhousegroup/library/coffee/scripts.coffee"
-			],
-			[
-				"tile",
-				"greenhousegroup/library/scss/_tiles.scss"
 			],
 			[
 				"function",
@@ -1441,24 +1451,8 @@
 				"greenhousegroup/header.php"
 			],
 			[
-				"dropshop",
-				"greenhousegroup/library/coffee/dropshop.coffee"
-			],
-			[
-				"16",
-				"greenhousegroup/library/scss/_1640up.scss"
-			],
-			[
-				"768",
-				"greenhousegroup/library/scss/_768up.scss"
-			],
-			[
 				"type",
 				"greenhousegroup/library/scss/_type.scss"
-			],
-			[
-				"tiles",
-				"greenhousegroup/library/scss/_tiles.scss"
 			],
 			[
 				"util",
@@ -1475,10 +1469,6 @@
 			[
 				"gulpfil",
 				"greenhousegroup/library/gulpfile.js"
-			],
-			[
-				"home",
-				"greenhousegroup/page_home.php"
 			],
 			[
 				"drops",
@@ -1521,10 +1511,6 @@
 				"greenhousegroup/library/scss/_type.scss"
 			],
 			[
-				"index",
-				"greenhousegroup/index.php"
-			],
-			[
 				"76",
 				"greenhousegroup/library/scss/_768up.scss"
 			],
@@ -1555,14 +1541,6 @@
 			[
 				"loading",
 				"greenhousegroup/library/scss/_loading.scss"
-			],
-			[
-				"sty",
-				"greenhousegroup/library/scss/style.scss"
-			],
-			[
-				"style",
-				"greenhousegroup/library/scss/style.scss"
 			],
 			[
 				"grid",
@@ -1615,10 +1593,6 @@
 			[
 				"all",
 				"greenhousegroup/library/js/all.js"
-			],
-			[
-				"footer",
-				"greenhousegroup/footer.php"
 			],
 			[
 				"func",
@@ -1903,14 +1877,6 @@
 			[
 				"tabs",
 				"resources/views/reports/tabs.blade.php"
-			],
-			[
-				"rewardty",
-				"app/RewardType.php"
-			],
-			[
-				"rewardsin",
-				"resources/views/rewards/index.blade.php"
 			]
 		],
 		"width": 0.0
@@ -1957,14 +1923,14 @@
 		],
 		"width": 0.0
 	},
-	"selected_group": 0,
+	"selected_group": 1,
 	"settings":
 	{
 	},
 	"show_minimap": false,
 	"show_open_files": true,
 	"show_tabs": true,
-	"side_bar_visible": false,
+	"side_bar_visible": true,
 	"side_bar_width": 251.0,
 	"status_bar_visible": true,
 	"template_settings":

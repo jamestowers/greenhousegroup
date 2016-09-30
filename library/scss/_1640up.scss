@@ -36,3 +36,13 @@ HERO
   max-width:100%;
   margin: 0 auto;
 }
+
+/*********************
+TILES
+*********************/
+.tile{
+  &:not(.featured){
+    width:20%;
+    padding-bottom: 12%;
+  }
+}

@@ -10174,7 +10174,7 @@ window.matchMedia||(window.matchMedia=function(){"use strict";var a=window.style
       if (!picture.length) {
         return;
       }
-      console.log('[App] lazy loading image');
+      console.log('[Dropshop] lazy loading image');
       el = $(picture);
       img = el.find('img');
       imgLoad = imagesLoaded(el);

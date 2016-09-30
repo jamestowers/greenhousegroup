@@ -86,7 +86,7 @@ class @Dropshop
   preloadBgImage: (parent)->
     picture = $(parent).find('picture')
     return unless picture.length
-    console.log '[App] lazy loading image'
+    console.log '[Dropshop] lazy loading image'
     el = $(picture)
     img = el.find 'img'
     imgLoad = imagesLoaded(el);

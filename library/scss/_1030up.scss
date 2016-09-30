@@ -24,3 +24,22 @@ HERO
   max-width:100%;
   margin: 0 auto;
 }
+
+
+/*********************
+TILES
+*********************/
+.tile{
+  &:not(.featured):not(.news-post){
+    width:25%;
+    padding-bottom: 14%;
+    /* margin-right:2%;
+    &:nth-child(even),
+    &:nth-child(3n+3){
+      margin-right:2%;
+    }
+    &:nth-child(4n+4){
+      margin-right:0;
+    } */
+  }
+}

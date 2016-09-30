@@ -83,9 +83,31 @@ HERO
 TILES
 *********************/
 .tile{
-  padding-bottom: 28%;
+  padding-bottom: 18%;
+  &.featured{
+    padding-bottom: 28%;
+    .tile-title{
+      @include font-size(6);
+    }
+  }
+  &:not(.featured):not(.news-post){
+    width:33.32%;
+    padding-bottom: 20%;
+    //margin-right:3%;
+    /* &:nth-child(even){
+      margin-right:3%;
+    }
+    &:nth-child(3n+3){
+      margin-right:0;
+    } */
+  }
+  .copy{
+    span{
+      @include font-size(1.2);
+    }
+  }
   .tile-title{
-    @include font-size(6);
+    @include font-size(3);
   }
 }
 
