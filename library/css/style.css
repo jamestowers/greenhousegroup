@@ -727,6 +727,9 @@ div#wrapper {
       -ms-flex: 1;
           flex: 1; }
 
+.news-post {
+  margin: 40px auto; }
+
 [data-animate="moveup"] {
   opacity: 0;
   -webkit-transform: translateY(40px);
@@ -793,7 +796,7 @@ div#wrapper {
     opacity: 0.9; }
   .tile.featured {
     float: none; }
-  .tile:not(.featured):not(.news-post) {
+  .tile:not(.featured) {
     float: left;
     width: 50%;
     margin-bottom: 14px;
@@ -801,18 +804,10 @@ div#wrapper {
     /*  &:nth-child(even){
       margin-right:0;
     } */ }
-    .tile:not(.featured):not(.news-post) .tile-title {
+    .tile:not(.featured) .tile-title {
       color: #FFF;
       font-size: 20px;
       font-size: 2rem; }
-  .tile.news-post {
-    width: 50%;
-    margin: 0;
-    float: left; }
-    .tile.news-post .tile-title {
-      color: #FFF;
-      font-size: 30px;
-      font-size: 3rem; }
   .tile figure {
     background-size: cover;
     opacity: 0.7;
@@ -1273,27 +1268,27 @@ nav {
       nav#nav-header li:nth-child(1) {
         transition-delay: 0.1s; }
         nav#nav-header li:nth-child(1) a:after {
-          -webkit-transform: rotate(-4deg);
-              -ms-transform: rotate(-4deg);
-                  transform: rotate(-4deg); }
-      nav#nav-header li:nth-child(2) {
-        transition-delay: 0.2s; }
-        nav#nav-header li:nth-child(2) a:after {
-          -webkit-transform: rotate(0deg);
-              -ms-transform: rotate(0deg);
-                  transform: rotate(0deg); }
-      nav#nav-header li:nth-child(3) {
-        transition-delay: 0.3s; }
-        nav#nav-header li:nth-child(3) a:after {
           -webkit-transform: rotate(-16deg);
               -ms-transform: rotate(-16deg);
                   transform: rotate(-16deg); }
+      nav#nav-header li:nth-child(2) {
+        transition-delay: 0.2s; }
+        nav#nav-header li:nth-child(2) a:after {
+          -webkit-transform: rotate(-8deg);
+              -ms-transform: rotate(-8deg);
+                  transform: rotate(-8deg); }
+      nav#nav-header li:nth-child(3) {
+        transition-delay: 0.3s; }
+        nav#nav-header li:nth-child(3) a:after {
+          -webkit-transform: rotate(0deg);
+              -ms-transform: rotate(0deg);
+                  transform: rotate(0deg); }
       nav#nav-header li:nth-child(4) {
         transition-delay: 0.4s; }
         nav#nav-header li:nth-child(4) a:after {
-          -webkit-transform: rotate(-1deg);
-              -ms-transform: rotate(-1deg);
-                  transform: rotate(-1deg); }
+          -webkit-transform: rotate(-16deg);
+              -ms-transform: rotate(-16deg);
+                  transform: rotate(-16deg); }
       nav#nav-header li:nth-child(5) {
         transition-delay: 0.5s; }
         nav#nav-header li:nth-child(5) a:after {
@@ -1303,21 +1298,21 @@ nav {
       nav#nav-header li:nth-child(6) {
         transition-delay: 0.6s; }
         nav#nav-header li:nth-child(6) a:after {
-          -webkit-transform: rotate(-10deg);
-              -ms-transform: rotate(-10deg);
-                  transform: rotate(-10deg); }
+          -webkit-transform: rotate(-5deg);
+              -ms-transform: rotate(-5deg);
+                  transform: rotate(-5deg); }
       nav#nav-header li:nth-child(7) {
         transition-delay: 0.7s; }
         nav#nav-header li:nth-child(7) a:after {
-          -webkit-transform: rotate(1deg);
-              -ms-transform: rotate(1deg);
-                  transform: rotate(1deg); }
+          -webkit-transform: rotate(-14deg);
+              -ms-transform: rotate(-14deg);
+                  transform: rotate(-14deg); }
       nav#nav-header li:nth-child(8) {
         transition-delay: 0.8s; }
         nav#nav-header li:nth-child(8) a:after {
-          -webkit-transform: rotate(-13deg);
-              -ms-transform: rotate(-13deg);
-                  transform: rotate(-13deg); }
+          -webkit-transform: rotate(4deg);
+              -ms-transform: rotate(4deg);
+                  transform: rotate(4deg); }
       nav#nav-header li a {
         color: #111;
         font-size: 50px;
@@ -2127,7 +2122,7 @@ TILES
       .tile.featured .tile-title {
         font-size: 60px;
         font-size: 6rem; }
-    .tile:not(.featured):not(.news-post) {
+    .tile:not(.featured) {
       width: 33.32%;
       padding-bottom: 20%;
       /* &:nth-child(even){
@@ -2188,7 +2183,7 @@ HERO
   /*********************
 TILES
 *********************/
-  .tile:not(.featured):not(.news-post) {
+  .tile:not(.featured) {
     width: 25%;
     padding-bottom: 14%;
     /* margin-right:2%;

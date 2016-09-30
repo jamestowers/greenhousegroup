@@ -61,14 +61,17 @@
             
             <h1 class="page-title">News</h1>
 
-            <section id="news" class="dark">
+            <section id="news" class="text-center">
 
                 <?php while ( $news_posts->have_posts() ) {
-                $news_posts->the_post();
+                $news_posts->the_post();?>
 
-                get_template_part('partials/news', 'post');
+                <div class="news-post group">
+                    <h3 class="date small"><?php the_date();?></h3>
+                    <h2><?php the_title();?></h2>
+                </div>
 
-            }?>
+            <?php }?>
 
             </section>
         <?php } ?>

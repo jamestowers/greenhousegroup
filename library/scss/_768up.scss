@@ -90,7 +90,7 @@ TILES
       @include font-size(6);
     }
   }
-  &:not(.featured):not(.news-post){
+  &:not(.featured){
     width:33.32%;
     padding-bottom: 20%;
     //margin-right:3%;

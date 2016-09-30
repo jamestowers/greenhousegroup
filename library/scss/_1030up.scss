@@ -30,7 +30,7 @@ HERO
 TILES
 *********************/
 .tile{
-  &:not(.featured):not(.news-post){
+  &:not(.featured){
     width:25%;
     padding-bottom: 14%;
     /* margin-right:2%;
