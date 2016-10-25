@@ -11,6 +11,8 @@
 .tile{
   background: $grey1;
   display: inline-block;
+  margin-left:1%;
+  margin-right:1%;
   padding-bottom: 60%;
   overflow: hidden;
   position: relative;
@@ -29,8 +31,6 @@
   &:not(.featured){
     float: none;
     width:48%;
-    margin-left:1%;
-    margin-right:1%;
     margin-bottom: 20px;
     padding-bottom: 30%;
     &:nth-child(odd){
