@@ -41,8 +41,8 @@ HERO
 TILES
 *********************/
 .tile{
-  &:not(.featured){
+  /* &:not(.featured){
     width:20%;
     padding-bottom: 12%;
-  }
+  } */
 }

@@ -27,13 +27,14 @@
     float: none;
   }
   &:not(.featured){
-    float: left;
-    width:49%;
+    float: none;
+    width:48%;
+    margin-left:1%;
     margin-right:1%;
-    margin-bottom: 14px;
+    margin-bottom: 20px;
     padding-bottom: 30%;
-    &:nth-child(even){
-      margin-right:0;
+    &:nth-child(odd){
+      //margin-right:0;
     }
     .tile-title{
       color: $white;

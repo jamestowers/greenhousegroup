@@ -90,17 +90,7 @@ TILES
       @include font-size(6);
     }
   }
-  &:not(.featured){
-    width:33.32%;
-    padding-bottom: 20%;
-    //margin-right:3%;
-    /* &:nth-child(even){
-      margin-right:3%;
-    }
-    &:nth-child(3n+3){
-      margin-right:0;
-    } */
-  }
+  /* s */
   .copy{
     span{
       @include font-size(1.2);
