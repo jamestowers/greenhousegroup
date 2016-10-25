@@ -4,7 +4,7 @@
     text-align: center;
     li:not(.featured){
       display: inline-block;
-      padding: $padding;
+      //padding: $padding;
     }
   }
 }
@@ -28,13 +28,13 @@
   }
   &:not(.featured){
     float: left;
-    width:50%;
-    //margin-right:2%;
+    width:49%;
+    margin-right:1%;
     margin-bottom: 14px;
     padding-bottom: 30%;
-   /*  &:nth-child(even){
+    &:nth-child(even){
       margin-right:0;
-    } */
+    }
     .tile-title{
       color: $white;
       @include font-size(2);
