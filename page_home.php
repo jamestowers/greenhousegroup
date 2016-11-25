@@ -51,7 +51,8 @@
     
         <?php $args = array(
             'post_type' => 'post',
-            'orderby' => 'date'
+            'orderby' => 'date',
+            'order'   => 'DESC',
             );
 
         $news_posts = new WP_Query($args);
