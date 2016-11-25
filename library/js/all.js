@@ -10210,13 +10210,16 @@ window.matchMedia||(window.matchMedia=function(){"use strict";var a=window.style
 
     Dropshop.prototype.setEventListeners = function() {
       console.log('[Dropshop] setting event listeners');
-      return this.$doc.on('click', 'a#menu-toggle', function() {
+      this.$doc.on('click', 'a#menu-toggle', function() {
         if (dropshop.$body.hasClass('nav-open')) {
           dropshop.closeNav();
         } else {
           dropshop.openNav();
         }
         return false;
+      });
+      return this.$doc.on('click', '#nav-header a', function() {
+        return dropshop.closeNav();
       });
     };
 

@@ -137,3 +137,6 @@ class @Dropshop
         dropshop.openNav()
       false
 
+    @$doc.on 'click', '#nav-header a', ->
+      dropshop.closeNav()
+
