@@ -50,7 +50,8 @@
 
     
         <?php $args = array(
-            'post_type' => 'post'
+            'post_type' => 'post',
+            'orderby' => 'date'
             );
 
         $news_posts = new WP_Query($args);
